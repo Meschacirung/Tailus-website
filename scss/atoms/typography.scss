@@ -1,0 +1,21 @@
+ h1{
+     font-size: 46px;
+     @apply text-darkGray-500 font-bold leading-3;
+ };
+
+ h2{
+    @extend h1;
+    font-size : 36px;
+ }
+
+ @screen md{
+    h1{
+        font-size: 36px;
+        @apply text-darkGray-500 font-bold;
+    };
+   
+    h2{
+       @extend h1;
+       font-size : 26px;
+    }
+ }
