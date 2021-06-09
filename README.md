@@ -1,19 +1,12 @@
-# Naturix-Kit
-Atlassian components system based on tailwindcss framework. Beautiful and simple atoms, molecules and organisms to help you to build prossionnal and modern User Interfaces. Naturix Kit is inspired by the best and most used design around the world such as Material Design System, Fluent Design, Human Design System and Atlassian Design, and it's User Experience centered.
+# Tailorus
+Tailorus is a Material Design System UI Kit based on tailwindcss framework. 
+Beautiful and simple atoms, molecules and organisms to help you to build prossionnal and modern User Interfaces. 
+Our components are atomic css (utilities classes) based, that means you can customize them at your own.
 
-We proved a light final css file containing only our atoms, molecules and organisms but it can be used with tailwindcss framework file.
+We proved a light final css file containing default theme look.
 Our foundations components are built to be adapted to your project no matter the approch you use **Components oriented classes** or **Utilities classes**
 
-Start your project with our atoms, molecules and organisms templates containing Tailwindcss utilities classes, HTML and JavaScipt code
-
-## Inspiration
-
-* Tailwind ui
-* Material  Design System
-* Material Design Bootstrap
-* Atlassian ui
-* Material ui
-* Freepik ui
+Start your project with our atoms, molecules and organisms templates containing Tailwindcss utilities classes, HTML and CSS (for special components)
 
 ## Framework & Languages
 
@@ -21,20 +14,17 @@ Start your project with our atoms, molecules and organisms templates containing 
 * Css
 * Tailwindcss
 * HTML
-* JavaScript
 
-## Design System
+## In our default look
 
 * Colors system
 * Typography
-* Grid system
-* Layout
-* Spacing
-* Components
 
 ## Ressources
 
+We use external ressources to build our components, most of them are not free...
+
 * Tailwindcss
-* Atlassian Design
+* Material Design System
 * Flaticon
 * Storyset

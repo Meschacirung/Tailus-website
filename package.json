@@ -1,0 +1,28 @@
+{
+  "name": "Tailorus",
+  "version": "1.0.0",
+  "description": "Atlassian components system based on tailwindcss framework. Beautiful and simple atoms, molecules and organisms to help you to build prossionnal and modern User Interfaces. Naturix Kit is inspired by the best and most used design systems around the world such as Material Design System, Fluent Design, Human Design System and Atlassian Design, and it's User Experience centered.",
+  "main": "tailwind.config.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.2.5",
+    "save": "^2.4.0",
+    "tailwindcss": "^2.1.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Meschacirung/Naturix-Kit.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Meschacirung/Naturix-Kit/issues"
+  },
+  "homepage": "https://github.com/Meschacirung/Naturix-Kit#readme"
+}
