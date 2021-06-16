@@ -1,13 +1,13 @@
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 16px;
-  @apply text-midGray-700;
+  @apply text-blueGray-500;
 }
 
 .h1, .h2 {
   font-size: 96px;
   letter-spacing: -1.5px;
-  @apply text-darkGray-500 font-light;
+  @apply text-blueGray-900 font-light;
 }
 
 .h2 {
@@ -18,7 +18,7 @@ body {
 .h3, .h4 {
   font-size: 48px;
   letter-spacing: 0px;
-  @apply text-darkGray-500 font-normal;
+  @apply text-blueGray-900 font-normal;
 }
 
 .h4 {
@@ -29,7 +29,7 @@ body {
 .h5, .h6 {
   font-size: 24px;
   letter-spacing: 0px;
-  @apply text-midGray-700 font-normal;
+  @apply text-blueGray-800 font-normal;
 }
 
 .h6 {
@@ -79,7 +79,7 @@ button {
 
 p, div, ul, article {
   font-size: 16px;
-  @apply text-midGray-700 font-normal leading-normal;
+  @apply text-blueGray-500 font-normal leading-normal;
 }
 
 a {
@@ -88,5 +88,3 @@ a {
 a:hover {
   @apply text-blue-600;
 }
-
-/*# sourceMappingURL=tailorus-theme.css.map */
