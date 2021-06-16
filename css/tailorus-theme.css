@@ -4,34 +4,80 @@ body {
   @apply text-midGray-700;
 }
 
-h1, h2 {
-  font-size: 36px;
-  @apply text-darkGray-500 font-semibold leading-4;
+.h1, .h2 {
+  font-size: 96px;
+  letter-spacing: -1.5px;
+  @apply text-darkGray-500 font-light;
 }
 
-h2 {
-  font-size: 26px;
+.h2 {
+  font-size: 60px;
+  letter-spacing: -0.5px;
 }
 
-h3, h4 {
+.h3, .h4 {
+  font-size: 48px;
+  letter-spacing: 0px;
+  @apply text-darkGray-500 font-normal;
+}
+
+.h4 {
+  font-size: 34px;
+  letter-spacing: 0.25px;
+}
+
+.h5, .h6 {
   font-size: 24px;
-  @apply text-darkGray-500 font-medium leading-3;
+  letter-spacing: 0px;
+  @apply text-midGray-700 font-normal;
 }
 
-h4 {
+.h6 {
   font-size: 20px;
+  letter-spacing: 0.15px;
+  @apply font-medium;
 }
 
-h5, h6 {
-  font-size: 18px;
-  @apply text-midGray-700 font-medium leading-3;
-}
-
-h6 {
+.subtitle-1, .body-1 {
   font-size: 16px;
+  letter-spacing: 0.15px;
+  @apply font-normal;
 }
 
-p, a, div, ul, article {
+.subtitle-2, .body-2 {
+  font-size: 14px;
+  letter-spacing: 0.1px;
+  @apply font-medium;
+}
+
+.body-1 {
+  letter-spacing: 0.5px;
+}
+
+.body-2 {
+  letter-spacing: 0.25px;
+  @apply font-normal;
+}
+
+button {
+  font-size: 14px;
+  letter-spacing: 1.25px;
+  @apply font-medium;
+}
+
+.caption, .overline {
+  font-size: 12px;
+  letter-spacing: 0.4px;
+  @apply font-normal;
+}
+
+.overline {
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  @apply uppercase;
+}
+
+p, div, ul, article {
   font-size: 16px;
   @apply text-midGray-700 font-normal leading-normal;
 }
@@ -43,22 +89,4 @@ a:hover {
   @apply text-blue-600;
 }
 
-button {
-  font-size: 16px;
-}
-
-small, cite {
-  font-size: 14px;
-  @apply text-midGray-500;
-}
-
-@screen md {
-  h1, h2 {
-    font-size: 46px;
-    @apply text-darkGray-500 font-bold;
-  }
-
-  h2 {
-    font-size: 36px;
-  }
-}
+/*# sourceMappingURL=tailorus-theme.css.map */
