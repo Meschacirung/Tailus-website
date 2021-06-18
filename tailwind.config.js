@@ -39,8 +39,8 @@ module.exports = {
       tealA: colors.tealA,
       cyan: colors.cyan,
       cyanA: colors.cyanA,
-      lightBlue: colors.lightBlue,
-      lightBlueA: colors.lightBlueA,
+      sky: colors.lightBlue,
+      skyA: colors.lightBlueA,
       blue: colors.blue,
       blueA: colors.blueA,
       indigo: colors.indigo,
@@ -53,7 +53,6 @@ module.exports = {
       pinkA: colors.pinkA,
       red: colors.red,
       redA: colors.redA,
-
     },
     spacing: {
       px: '1px',
@@ -139,6 +138,7 @@ module.exports = {
     },
     blur: {
       0: '0',
+      none: '0',
       sm: '4px',
       DEFAULT: '8px',
       md: '12px',
@@ -193,6 +193,7 @@ module.exports = {
       inner: 'inset 0 2px 4px 0 rgba(0, 0, 0, 0.06)',
       none: 'none',
     },
+    caretColor: (theme) => theme('colors'),
     contrast: {
       0: '0',
       50: '.5',
@@ -203,6 +204,9 @@ module.exports = {
       200: '2',
     },
     container: {},
+    content: {
+      none: 'none',
+    },
     cursor: {
       auto: 'auto',
       default: 'default',
@@ -834,6 +838,8 @@ module.exports = {
     'even',
     'visited',
     'checked',
+    'empty',
+    'read-only',
     'group-hover',
     'group-focus',
     'focus-within',
@@ -869,6 +875,7 @@ module.exports = {
     backgroundPosition: ['responsive'],
     backgroundRepeat: ['responsive'],
     backgroundSize: ['responsive'],
+    backgroundOrigin: ['responsive'],
     blur: ['responsive'],
     borderCollapse: ['responsive'],
     borderColor: ['responsive', 'dark', 'group-hover', 'focus-within', 'hover', 'focus'],
