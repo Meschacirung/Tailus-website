@@ -848,6 +848,8 @@ module.exports = {
     'focus-visible',
     'active',
     'disabled',
+    'before',
+    'after',
   ],
   variants: {
     accessibility: ['responsive', 'focus-within', 'focus'],

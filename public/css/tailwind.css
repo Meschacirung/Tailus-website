@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'CircularStd';
+    src: url("../fonts/CircularStd-Bold.ttf");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'CircularStd';
+    src: url("../fonts/CircularStd-Medium.ttf");
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'CircularStd';
+    src: url("../fonts/CircularStd-Book.ttf");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'CircularStd';
+    src: url("../fonts/CircularStd-Book.ttf");
+    font-weight: 100;
+}
+
+body{
+    font-family: 'CircularStd', sans-serif;
+    z-index:5000;
+}
+
+.scrollbar-black::-webkit-scrollbar-track {
+    @apply bg-transparent
+}
+
+.scrollbar-black::-webkit-scrollbar {
+    @apply w-1.5 h-1.5;
+}
+
+.scrollbar-black::-webkit-scrollbar-thumb {
+    @apply rounded lg:bg-gray-50 bg-transparent;
+}
+
+.scrollbar-black::-webkit-scrollbar-thumb:hover {
+    @apply bg-gray-100;
+}
+
+.search .search-history{
+    @apply hidden;
+}
+
+.search:focus-within .search-history{
+    display: block !important;
+}
