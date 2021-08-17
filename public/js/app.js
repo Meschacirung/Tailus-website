@@ -64,7 +64,6 @@ tabItems.forEach(tabItem => {
                 tabContent.classList.replace('opacity-100', 'opacity-0');
                 tabContent.classList.replace('visible', 'invisible');
                 tabContent.classList.replace('translate-y-0', '-translate-y-10');
-                
             }
         })
     })
