@@ -234,6 +234,13 @@
                                                             </svg>
                                                             <span>Preview</span>
                                                         </button>
+                                                        <button data-target="css"  class="tab-item md:px-3 px-1.5 py-1.5 hover:text-gray-50 focus:outline-none flex gap-1">
+                                                            <svg fill="none" class="stroke-current w-5 h-5">
+                                                                <path d="M17.25 10c0 1-1.75 6.25-7.25 6.25S2.75 11 2.75 10 4.5 3.75 10 3.75 17.25 9 17.25 10z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                                <circle cx="10" cy="10" r="2.25" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></circle>
+                                                            </svg>
+                                                            <span>Css</span>
+                                                        </button>
                                                         <button data-target="code" class="tab-item md:px-3 px-1.5 py-1.5 hover:text-gray-50 rounded-md focus:outline-none flex gap-1 transition">
                                                             <svg fill="none" class="stroke-current w-5 h-5" >
                                                                 <path d="M13.75 6.75l3.5 3.25-3.5 3.25M6.25 13.25L2.75 10l3.5-3.25" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -257,19 +264,43 @@
                                                         <img src="../../../public/images/avatars/meschac.jfif" class="w-24 h-24 rounded-full object-center object-cover" alt="">
                                                     </div>
                                                 </div>
+                                                <div data-name="css" class="invisible transform -translate-y-10 opacity-0 tab-content absolute top-0 w-full pt-8 scrollbar-black rounded-xl transition duration-500 ease-in-out">
+                                                    <div>
+                                                        <pre class="rounded-xl">
+<code class="language-css hightlight">
+    body{
+        font-family: 'CircularStd', sans-serif;
+        z-index:5000;
+    }
+    
+    .scrollbar-black::-webkit-scrollbar-track {
+        @apply bg-transparent
+    }
+    
+    .scrollbar-black::-webkit-scrollbar {
+        @apply w-1.5 h-1.5;
+    }
+    
+    .scrollbar-black::-webkit-scrollbar-thumb {
+        @apply rounded lg:bg-gray-50 bg-transparent;
+    }
+</code>
+                                                        </pre>
+                                                    </div>
+                                                </div>
                                                 <div data-name="code" class="invisible transform -translate-y-10 opacity-0 tab-content absolute top-0 w-full pt-8 scrollbar-black rounded-xl transition duration-500 ease-in-out">
                                                     <div>
                                                         <pre class="rounded-xl">
-    <code class="language-markup hightlight">
-    &lt;div class="flex md:justify-center flex-wrap items-end mt-14 lg:gap-16 md:gap-8 gap-4"&gt;
-        &lt;img src="..." class="w-8 h-8 rounded-full object-center object-cover" alt=""&gt;
-        &lt;img src="..." class="w-10 h-10 rounded-full object-center object-cover" alt=""&gt;
-        &lt;img src="..." class="w-12 h-12 rounded-full object-center object-cover" alt=""&gt;
-        &lt;img src="..." class="w-16 h-16 rounded-full object-center object-cover" alt=""&gt;
-        &lt;img src="..." class="w-20 h-20 rounded-full object-center object-cover" alt=""&gt;
-        &lt;img src="..." class="w-24 h-24 rounded-full object-center object-cover" alt=""&gt;
-    &lt;/div&gt;
-    </code>
+<code class="language-markup hightlight">
+&lt;div class="flex md:justify-center flex-wrap items-end mt-14 lg:gap-16 md:gap-8 gap-4"&gt;
+    &lt;img src="..." class="w-8 h-8 rounded-full object-center object-cover" alt=""&gt;
+    &lt;img src="..." class="w-10 h-10 rounded-full object-center object-cover" alt=""&gt;
+    &lt;img src="..." class="w-12 h-12 rounded-full object-center object-cover" alt=""&gt;
+    &lt;img src="..." class="w-16 h-16 rounded-full object-center object-cover" alt=""&gt;
+    &lt;img src="..." class="w-20 h-20 rounded-full object-center object-cover" alt=""&gt;
+    &lt;img src="..." class="w-24 h-24 rounded-full object-center object-cover" alt=""&gt;
+&lt;/div&gt;
+</code>
                                                         </pre>
                                                     </div>
                                                 </div>
@@ -427,6 +458,6 @@
     </div>
 
     <script src="../../../public/js/app.js"></script>
-    /*<script src="../../../public/js/prism.js"></script>*/
+    <script src="../../../public/js/prism.js"></script>
 </body>
 </html>
