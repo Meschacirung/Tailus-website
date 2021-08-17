@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avatar</title>
+
+    <link rel="stylesheet" href="../../../public/css/tailwind.min.css">
+</head>
+<body class="text-gray-600">
+    <header class="rounded-md bg-white fixed w-full top-0 z-50">
+        <nav class="container lg:w-9/12 ml-auto pt-4 lg:px-6 md:px-12 px-4">
+            <div class="flex gap-8 justify-between border-b-2 border-gray-50 h-14 lg:-ml-16 lg:pl-6">
+
+                <div class="h-10 flex items-center">
+                    <h2 class="text-gray-500 text-xl">Docs</h2>
+                </div>
+
+                <div class="lg:w-6/12 md:w-8/12 relative -mt-1">
+                    <form action="" class="focus-within:bg-white focus-within:shadow-xl rounded-2xl search transition duration-300">
+                        <div class="relative w-full">
+                            <div class="absolute top-0 bottom-0 h-full flex items-center mb-auto md:left-4 left-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 fill-current text-gray-500" viewBox="0 0 35.997 36.004">
+                                    <path id="Icon_awesome-search" data-name="search" d="M35.508,31.127l-7.01-7.01a1.686,1.686,0,0,0-1.2-.492H26.156a14.618,14.618,0,1,0-2.531,2.531V27.3a1.686,1.686,0,0,0,.492,1.2l7.01,7.01a1.681,1.681,0,0,0,2.384,0l1.99-1.99a1.7,1.7,0,0,0,.007-2.391Zm-20.883-7.5a9,9,0,1,1,9-9A8.995,8.995,0,0,1,14.625,23.625Z"></path>
+                                </svg> 
+                            </div>
+                            <input type="search" placeholder="Rechercher" name="search" id="search" class="text-sm w-full rounded py-3 pr-4 md:pl-12 pl-7 bg-gray-50 outline-none focus:bg-transparent focus:rounded-3xl transition-all">                         
+                        </div>
+                        <div class="w-full px-4 search-history pt-4">
+                            <div class="border-t-2 py-4 border-gray-50">
+                                <div class="flex gap-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-3 text-gray-200" viewBox="0 0 16 16">
+                                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"></path>
+                                    </svg>
+
+                                    <h5 class="text-sm text-gray-400">History</h5>
+                                </div>
+                                
+                                <ul class="mt-4">
+                                    <li class="py-2 px-4 rounded bg-gray-100 bg-opacity-0 hover:bg-gray-50">
+                                        lorem ipsum
+                                    </li>
+                                    <li class="py-2 px-4 rounded bg-gray-100 bg-opacity-0 hover:bg-gray-50">
+                                        lorem ipsum
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </form>
+                </div>          
+
+                <div class="flex items-center gap-4 -mt-4">
+                    <div>
+                        <img src="../../../public/images/avatars/girl2.jpg" class="w-10 h-10 rounded-full object-center object-cover" alt="">
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class=" ">
+        <div class="flex">
+            <div class="fixed lg:block hidden top-0 lg:w-1/4 w-full z-50 lg:bg-transparent bg-gray-50">
+                <nav role="navigation" class="rounded-lg bg-white py-4 px-8 mr-12 h-full">
+
+                    <div class="flex items-center gap-4 pb-4 border-b-2 border-gray-50 h-14 -mr-10">
+                        <div class="flex -space-x-6">
+                            <div class="h-7 w-7 bg-opacity-75 rounded-br-full bg-cyan-500">
+
+                            </div>
+                            <div class="h-7 w-7 opacity-75 rounded-full bg-purple-300">
+
+                            </div>
+                        </div>
+                        <h1 class="text-2xl font-medium">Tailorus</h1>
+                    </div>
+                    
+                    <div class="mt-4 -ml-4 -mr-6 relative overflow-y-auto overflow-x-hidden" style="height:85vh;">
+                        <span class="uppercase px-4 text-gray-200">Docs</span>
+                        <ul class="space-y-4 mb-12 px-4 mt-8">
+                            <li>
+                                <a href="" class="flex gap-4 text-gray-600">
+                                    <img src="../../../public/images/icons/favorites.svg" class="w-6" alt="">
+                                    Documentation
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="flex gap-4 text-gray-600">
+                                    <img src="../../../public/images/icons/atom.svg" class="w-6" alt="">
+                                    Atomic css
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="flex gap-4 text-gray-600">
+                                    <img src="../../../public/images/icons/organism.svg" class="w-6" alt="">
+                                    Atomic Design
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="flex gap-4 text-gray-600">
+                                    <img src="../../../public/images/icons/template.svg" class="w-6" alt="">
+                                    Default look
+                                </a>
+                            </li>
+                        </ul>
+                        
+                        <ul class="space-y-4">
+                            <li class="pr-2">
+                                <div class="py-2 px-4 text-gray-700 bg-white uppercase">
+                                    <a href="" class="block">Atoms</a>
+                                </div>
+                                <ul class="text-sm">
+                                    <li>
+                                        <a href="" class="block py-2 px-5">Avatar</a>
+                                        <ul class="px-2">
+                                            <li>
+                                                <a class="block py-2 px-5 hover:text-gray-800 transition " href="">Avatar Initial</a>
+                                            </li>
+                                            <li>
+                                                <a class="block py-2 px-5 hover:text-gray-800 transition" href="">Avatar Default</a>
+                                            </li>
+                                            <li>
+                                                <a class="block py-2 px-5 rounded bg-cyan-100 bg-opacity-40 hover:bg-opacity-60 text-cyan-700 transition" href="">Avatar Status</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a class="block py-2 px-5 hover:text-gray-800 transition" href="">Badges</a>
+                                    </li>
+                                    <li>
+                                        <a class="block py-2 px-5 hover:text-gray-800 transition" href="">Avatar</a>
+                                    </li>
+                                    <li>
+                                        <a class="block py-2 px-5 hover:text-gray-800 transition" href="">Badges</a>
+                                    </li>
+                                    <li>
+                                        <a class="block py-2 px-5 hover:text-gray-800 transition" href="">Avatar</a>
+                                    </li>
+                                    <li>
+                                        <a class="block py-2 px-5 hover:text-gray-800 transition" href="">Badges</a>
+                                    </li>
+                                    <li>
+                                        <a class="block py-2 px-5 hover:text-gray-800 transition" href="">Avatar</a>
+                                    </li>
+                                    <li>
+                                        <a class="block py-2 px-5 hover:text-gray-800 transition" href="">Badges</a>
+                                    </li>
+                                    <li>
+                                        <a class="block py-2 px-5 hover:text-gray-800 transition" href="">Avatar</a>
+                                    </li>
+                                    <li>
+                                        <a class="block py-2 px-5 hover:text-gray-800 transition" href="">Badges</a>
+                                    </li>
+                                    <li>
+                                        <a class="block py-2 px-5 hover:text-gray-800 transition" href="">Avatar</a>
+                                    </li>
+                                    <li>
+                                        <a class="block py-2 px-5 hover:text-gray-800 transition" href="">Badges</a>
+                                    </li>
+                                
+                                </ul>
+                            </li>
+                            <li class="pr-2">
+                                <div class="py-2 px-4 text-gray-700 bg-white uppercase">
+                                    <a href="" class="block">Molecules</a>
+                                </div>
+                                <ul class="text-sm">
+                                    <li>
+                                        <a class="block py-2 px-5 hover:text-gray-800 transition" href="">Badges</a>
+                                    </li>
+                                    <li>
+                                        <a class="block py-2 px-5 hover:text-gray-800 transition" href="">Avatar</a>
+                                    </li>
+                                    <li>
+                                        <a class="block py-2 px-5 hover:text-gray-800 transition" href="">Badges</a>
+                                    </li>
+                                
+                                </ul>
+                                
+                            </li>
+                            <li class="pr-2">
+                                <div class="py-2 px-4 text-gray-700 bg-white uppercase">
+                                    <a href="" class="block">Organisms</a>
+                                </div>
+                                <ul class="text-sm">
+                                    <li>
+                                        <a class="block py-2 px-5 hover:text-gray-800 transition" href="">Badges</a>
+                                    </li>
+                                    <li>
+                                        <a class="block py-2 px-5 hover:text-gray-800 transition" href="">Avatar</a>
+                                    </li>
+                                    <li>
+                                        <a class="block py-2 px-5 hover:text-gray-800 transition" href="">Badges</a>
+                                    </li>
+                                
+                                </ul>
+                                
+                            </li>
+                            <li class="pr-2">
+                                <div class="py-2 px-4 text-gray-700 bg-white uppercase">
+                                    <a href="" class="block">Templates</a>
+                                </div>
+                                <ul class="text-sm">
+                                    <li>
+                                        <a class="block py-2 px-5 hover:text-gray-800 transition" href="">Badges</a>
+                                    </li>
+                                    <li>
+                                        <a class="block py-2 px-5 hover:text-gray-800 transition" href="">Avatar</a>
+                                    </li>
+                                    <li>
+                                        <a class="block py-2 px-5 hover:text-gray-800 transition" href="">Badges</a>
+                                    </li>
+                                
+                                </ul>
+                                
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="lg:w-9/12 ml-auto h-screen">
+                <div class="container lg:pt-28 md:py-12 pr-6 p-4 lg:-ml-8">
+                    <div class="lg:flex gap-8 lg:px-0 md:px-8 justify-between">
+                        <div  class="lg:w-5/6">
+                            <div>
+                                <h1 class="text-5xl text-gray-900">Avatar Status</h1>
+                                <p class="mt-4">An avatar represent a user with his face or initial it can be used in many molecules such as a card, a navbar, a list of users and more. We imagined it in more styles, choose the one that adapts to your design.</p>
+                            </div>
+                            
+                            <div class="space-y-24 mt-16">
+                                <div>
+                                    <h2 class="text-2xl text-gray-700">Unactive</h2>
+                                    <div class="flex flex-wrap items-end lg:gap-16 gap-8 mt-8">
+                                        
+                                        <div>
+                                            <h3 class="text-xl text-gray-600">Unactive</h3>
+                                            <div class="flex flex-wrap items-end gap-4 mt-4">
+                                                <div class="relative">
+                                                    <img src="../../../public/images/avatars/girl2.jpg" title="User Name" class="w-10 h-10 object-center object-cover rounded-lg transition" alt="">
+                                                    <i class="absolute top-0 right-0 h-3 w-3 rounded-full border-2 border-white bg-gray-200"></i>
+                                                </div>
+                    
+                                                <div class="relative">
+                                                    <img src="../../../public/images/avatars/girl2.jpg" title="User Name" class="w-10 h-10 object-center object-cover rounded-full transition" alt="">
+                                                    <i class="absolute top-0 right-0 h-3 w-3 rounded-full border-2 border-white bg-gray-200"></i>
+                                                </div>
+            
+                                                <div class="relative">
+                                                    <img src="../../../public/images/avatars/girl2.jpg" title="User Name" class="w-10 h-10 object-center object-cover rounded-lg border-4 border-gray-100 border-opacity-0 hover:border-opacity-50 transition" alt="">
+                                                    <i class="absolute top-0 right-0 h-3 w-3 rounded-full border-2 border-white bg-gray-200"></i>
+                                                </div>
+                    
+                                                <div class="relative">
+                                                    <img src="../../../public/images/avatars/girl2.jpg" title="User Name" class="w-10 h-10 object-center object-cover rounded-full border-4 border-gray-100 border-opacity-0 hover:border-opacity-50 transition" alt="">
+                                                    <i class="absolute top-0 right-0 h-3 w-3 rounded-full border-2 border-white bg-gray-200"></i>
+                                                </div>
+                                                <div class="relative">
+                                                    <div class="font-semibold w-12 h-12 flex justify-center items-center rounded-full bg-cyan-400 text-cyan-900">VM</div>
+                                                    <i class="absolute top-0 right-0 h-3 w-3 rounded-full border-2 border-white bg-gray-200"></i>
+                                                </div>
+                                                <div class="relative">
+                                                    <div class="font-semibold w-12 h-12 flex justify-center items-center rounded-full bg-cyan-400 text-cyan-900 border-4 border-white hover:border-gray-100 transition">VM</div>
+                                                    <i class="absolute top-1 right-1 h-3 w-3 rounded-full border-2 border-white bg-gray-200"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div>
+                                            <h3 class="text-xl text-gray-600">Active</h3>
+                                            <div class="flex gap-4 mt-4">
+            
+                                                <div class="relative">
+                                                    <img src="../../../public/images/avatars/girl2.jpg" title="User Name" class="w-10 h-10 object-center object-cover rounded-lg transition" alt="">
+                                                    <i class="absolute top-0 right-0 h-3 w-3 rounded-full border-2 border-white bg-green-400"></i>
+                                                </div>
+                    
+                                                <div class="relative">
+                                                    <img src="../../../public/images/avatars/girl2.jpg" title="User Name" class="w-10 h-10 object-center object-cover rounded-full transition" alt="">
+                                                    <i class="absolute top-0 right-0 h-3 w-3 rounded-full border-2 border-white bg-green-400"></i>
+                                                </div>
+            
+                                                <div class="relative">
+                                                    <img src="../../../public/images/avatars/girl2.jpg" title="User Name" class="w-10 h-10 object-center object-cover rounded-lg border-4 border-gray-100 border-opacity-0 hover:border-opacity-50 transition" alt="">
+                                                    <i class="absolute top-0 right-0 h-3 w-3 rounded-full border-2 border-white bg-green-400"></i>
+                                                </div>
+                    
+                                                <div class="relative">
+                                                    <img src="../../../public/images/avatars/girl2.jpg" title="User Name" class="w-10 h-10 object-center object-cover rounded-full border-4 border-gray-100 border-opacity-0 hover:border-opacity-50 transition" alt="">
+                                                    <i class="absolute top-0 right-0 h-3 w-3 rounded-full border-2 border-white bg-green-400"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+            
+                                        <div>
+                                            <h3 class="text-xl text-gray-600">Warning</h3>
+                                            <div class="flex gap-4 mt-4">
+                                                <div class="relative">
+                                                    <img src="../../../public/images/avatars/girl2.jpg" title="User Name" class="w-10 h-10 object-center object-cover rounded-lg transition" alt="">
+                                                    <i class="absolute top-0 right-0 h-3 w-3 rounded-full border-2 border-white bg-yellow-400"></i>
+                                                </div>
+                    
+                                                <div class="relative">
+                                                    <img src="../../../public/images/avatars/girl2.jpg" title="User Name" class="w-10 h-10 object-center object-cover rounded-full transition" alt="">
+                                                    <i class="absolute top-0 right-0 h-3 w-3 rounded-full border-2 border-white bg-yellow-400"></i>
+                                                </div>
+            
+                                                <div class="relative">
+                                                    <img src="../../../public/images/avatars/girl2.jpg" title="User Name" class="w-10 h-10 object-center object-cover rounded-lg border-4 border-gray-100 border-opacity-0 hover:border-opacity-50 transition" alt="">
+                                                    <i class="absolute top-0 right-0 h-3 w-3 rounded-full border-2 border-white bg-yellow-400"></i>
+                                                </div>
+                    
+                                                <div class="relative">
+                                                    <img src="../../../public/images/avatars/girl2.jpg" title="User Name" class="w-10 h-10 object-center object-cover rounded-full border-4 border-gray-100 border-opacity-0 hover:border-opacity-50 transition" alt="">
+                                                    <i class="absolute top-0 right-0 h-3 w-3 rounded-full border-2 border-white bg-yellow-400"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+            
+                                        <div>
+                                            <h3 class="text-xl text-gray-600">Danger</h3>
+                                            <div class="flex gap-4 mt-4">
+                                                <div class="relative">
+                                                    <img src="../../../public/images/avatars/girl2.jpg" title="User Name" class="w-10 h-10 object-center object-cover rounded-lg transition" alt="">
+                                                    <i class="absolute top-0 right-0 h-3 w-3 rounded-full border-2 border-white bg-red-400"></i>
+                                                </div>
+                    
+                                                <div class="relative">
+                                                    <img src="../../../public/images/avatars/girl2.jpg" title="User Name" class="w-10 h-10 object-center object-cover rounded-full transition" alt="">
+                                                    <i class="absolute top-0 right-0 h-3 w-3 rounded-full border-2 border-white bg-red-400"></i>
+                                                </div>
+            
+                                                <div class="relative">
+                                                    <img src="../../../public/images/avatars/girl2.jpg" title="User Name" class="w-10 h-10 object-center object-cover rounded-lg border-4 border-gray-100 border-opacity-0 hover:border-opacity-50 transition" alt="">
+                                                    <i class="absolute top-0 right-0 h-3 w-3 rounded-full border-2 border-white bg-red-400"></i>
+                                                </div>
+                    
+                                                <div class="relative">
+                                                    <img src="../../../public/images/avatars/girl2.jpg" title="User Name" class="w-10 h-10 object-center object-cover rounded-full border-4 border-gray-100 border-opacity-0 hover:border-opacity-50 transition" alt="">
+                                                    <i class="absolute top-0 right-0 h-3 w-3 rounded-full border-2 border-white bg-red-400"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+
+                        <div class="w-1/4 lg:block hidden">
+                            <div class="sticky top-24">
+                                <h5 class="uppercase">On this page</h5>
+
+                                <ul class="text-sm space-y-4 pt-4">
+                                    <li><a href="" class="text-cyan-500">Full rounded</a></li>
+                                    <li><a href="">Rounded Lg</a></li>
+                                    <li><a href="">Hoverable</a></li>
+                                    <li><a href="">Status</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

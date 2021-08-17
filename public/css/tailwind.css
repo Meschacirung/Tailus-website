@@ -54,3 +54,7 @@ body{
 .search:focus-within .search-history{
     display: block !important;
 }
+
+.tab-indicator{
+    transition:all .6s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
