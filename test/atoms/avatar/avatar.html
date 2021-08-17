@@ -223,9 +223,8 @@
                                     <h2 class="text-xl text-blueGray-700">Full rounded avatars</h2>
                                     <div class="bg-white h-full rounded-2xl shadow mt-8 component-container transition duration-150">    
                                         <div class="relative tab">
-                                            <div class="absolute w-max right-4 top-4 tab-head">
-                                                <nav class="p-1 rounded-md bg-gray-400 bg-opacity-10  text-sm relative transition duration-300">
-                                                    
+                                            <div class="absolute w-max right-4 z-20 top-4 flex items-center divide-x divide-gray-100 gap-4">
+                                                <nav class="tab-head p-1 rounded-md bg-gray-400 bg-opacity-20  text-sm relative transition duration-300">
                                                     <div class="flex relative z-20 text-gray-600">
                                                         <button data-target="preview"  class="tab-item md:px-3 px-1.5 py-1.5 hover:text-gray-50 focus:outline-none flex gap-1">
                                                             <svg fill="none" class="stroke-current w-5 h-5">
@@ -233,13 +232,6 @@
                                                                 <circle cx="10" cy="10" r="2.25" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></circle>
                                                             </svg>
                                                             <span>Preview</span>
-                                                        </button>
-                                                        <button data-target="css"  class="tab-item md:px-3 px-1.5 py-1.5 hover:text-gray-50 focus:outline-none flex gap-1">
-                                                            <svg fill="none" class="stroke-current w-5 h-5">
-                                                                <path d="M17.25 10c0 1-1.75 6.25-7.25 6.25S2.75 11 2.75 10 4.5 3.75 10 3.75 17.25 9 17.25 10z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                                <circle cx="10" cy="10" r="2.25" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></circle>
-                                                            </svg>
-                                                            <span>Css</span>
                                                         </button>
                                                         <button data-target="code" class="tab-item md:px-3 px-1.5 py-1.5 hover:text-gray-50 rounded-md focus:outline-none flex gap-1 transition">
                                                             <svg fill="none" class="stroke-current w-5 h-5" >
@@ -251,6 +243,17 @@
                                                     
                                                     <div class="tab-indicator absolute top-1 z-10 bg-cyan-500 hover:bg-cyan-600 rounded-md md:px-3 px-1.5 py-1.5 duration-300"></div>
                                                 </nav>
+
+                                                <div class="pl-2">
+                                                    <button class="text-sm text-cyan-500 p-2 hover:bg-cyan-400 hover:bg-opacity-20 focus:bg-opacity-40 focus:bg-cyan-500 rounded-md focus:outline-none">
+                                                        
+                                                        <svg class="w-5 h-5" viewBox="0 0 24 24">
+                                                            <path fill="currentColor" d="M19,3H14.82C14.25,1.44 12.53,0.64 11,1.2C10.14,1.5 9.5,2.16 9.18,3H5A2,2 0 0,0 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5A2,2 0 0,0 19,3M12,3A1,1 0 0,1 13,4A1,1 0 0,1 12,5A1,1 0 0,1 11,4A1,1 0 0,1 12,3M7,7H17V5H19V19H5V5H7V7M17,11H7V9H17V11M15,15H7V13H15V15Z" />
+                                                        </svg>
+                                                         
+                                                    </button>
+                                                </div>
+                                                
                                             </div>
 
                                             <div class="relative">
@@ -264,31 +267,7 @@
                                                         <img src="../../../public/images/avatars/meschac.jfif" class="w-24 h-24 rounded-full object-center object-cover" alt="">
                                                     </div>
                                                 </div>
-                                                <div data-name="css" class="invisible transform -translate-y-10 opacity-0 tab-content absolute top-0 w-full pt-8 scrollbar-black rounded-xl transition duration-500 ease-in-out">
-                                                    <div>
-                                                        <pre class="rounded-xl">
-<code class="language-css hightlight">
-    body{
-        font-family: 'CircularStd', sans-serif;
-        z-index:5000;
-    }
-    
-    .scrollbar-black::-webkit-scrollbar-track {
-        @apply bg-transparent
-    }
-    
-    .scrollbar-black::-webkit-scrollbar {
-        @apply w-1.5 h-1.5;
-    }
-    
-    .scrollbar-black::-webkit-scrollbar-thumb {
-        @apply rounded lg:bg-gray-50 bg-transparent;
-    }
-</code>
-                                                        </pre>
-                                                    </div>
-                                                </div>
-                                                <div data-name="code" class="invisible transform -translate-y-10 opacity-0 tab-content absolute top-0 w-full pt-8 scrollbar-black rounded-xl transition duration-500 ease-in-out">
+                                                <div data-name="code" class="invisible text-sm transform -translate-y-10 opacity-0 tab-content absolute top-0 w-full pt-8 scrollbar-black rounded-xl transition duration-500 ease-in-out">
                                                     <div>
                                                         <pre class="rounded-xl">
 <code class="language-markup hightlight">

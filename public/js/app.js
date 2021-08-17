@@ -42,9 +42,8 @@ tabItems.forEach(tabItem => {
         tabIndicator.style.height = tabsize.height + "px";
         tabIndicator.style.left = (tabsize.left - tabProps.left) + "px";
 
-        if ((tabItem.getAttribute('data-target') == "code") || (tabItem.getAttribute('data-target') == "css")){
+        if (tabItem.getAttribute('data-target') == "code"){
             componentContainer.classList.replace('bg-white', 'bg-gray-800');
-            
         }else {
             componentContainer.classList.replace('bg-gray-800', 'bg-white')
         }
