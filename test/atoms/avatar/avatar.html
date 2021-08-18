@@ -9,29 +9,29 @@
     <link rel="stylesheet" href="../../../public/css/tailwind.min.css">
     <link rel="stylesheet" href="../../../public/css/prism.css">
 </head>
-<body class="text-gray-600 bg-gray-50 bg-opacity-50 transition">
-    <header class="rounded-md bg-white fixed w-full top-0 z-50">
+<body class="text-gray-200 bg-gray-900 transition">
+    <header class="rounded-md fixed w-full top-0 z-50 bg-gradient-to-b from-gray-900 via-gray-900">
         <nav class="container lg:w-9/12 ml-auto pt-4 lg:px-6 md:px-12 px-4">
-            <div class="flex gap-8 justify-between border-b-2 border-gray-50 h-14 lg:-ml-16 lg:pl-6">
+            <div class="flex gap-8 justify-between border-b border-gray-800 h-14 lg:-ml-16 lg:pl-6">
 
                 <div class="h-10 flex items-center">
-                    <h2 class="text-gray-500 text-xl">Docs</h2>
+                    <h2 class="text-gray-200 text-xl">Atoms</h2>
                 </div>
 
                 <div class="lg:w-6/12 md:w-8/12 relative -mt-1">
-                    <form action="" class="focus-within:bg-white focus-within:shadow-xl rounded-2xl search transition duration-300">
+                    <form action="" class="focus-within:bg-gray-800 focus-within:shadow-xl rounded-2xl search transition duration-300">
                         <div class="relative w-full">
                             <div class="absolute top-0 bottom-0 h-full flex items-center mb-auto md:left-4 left-3">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="w-4 fill-current text-gray-500" viewBox="0 0 35.997 36.004">
                                     <path id="Icon_awesome-search" data-name="search" d="M35.508,31.127l-7.01-7.01a1.686,1.686,0,0,0-1.2-.492H26.156a14.618,14.618,0,1,0-2.531,2.531V27.3a1.686,1.686,0,0,0,.492,1.2l7.01,7.01a1.681,1.681,0,0,0,2.384,0l1.99-1.99a1.7,1.7,0,0,0,.007-2.391Zm-20.883-7.5a9,9,0,1,1,9-9A8.995,8.995,0,0,1,14.625,23.625Z"></path>
                                 </svg> 
                             </div>
-                            <input type="search" placeholder="Rechercher" name="search" id="search" class="text-sm w-full rounded py-3 pr-4 md:pl-12 pl-7 bg-gray-50 outline-none focus:bg-transparent focus:rounded-3xl transition-all">                         
+                            <input type="search" placeholder="Rechercher" name="search" id="search" class="text-sm text-gray-50 placeholder-gray-100 w-full rounded py-3 pr-4 md:pl-12 pl-7 bg-gray-800 outline-none focus:bg-transparent focus:rounded-3xl transition-all">                         
                         </div>
                         <div class="w-full px-4 search-history pt-4">
-                            <div class="border-t-2 py-4 border-gray-50">
+                            <div class="border-t py-4 border-gray-600">
                                 <div class="flex gap-2">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-3 text-gray-200" viewBox="0 0 16 16">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-3 text-gray-50" viewBox="0 0 16 16">
                                         <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"></path>
                                     </svg>
 
@@ -61,10 +61,10 @@
     </header>
     <div class=" ">
         <div class="flex">
-            <div class="fixed lg:block hidden top-0 lg:w-1/4 w-full z-50 lg:bg-transparent bg-gray-50">
-                <nav role="navigation" class="rounded-lg bg-white py-4 px-8 mr-12 h-full">
+            <div class="fixed lg:block hidden p-1 top-0 lg:w-1/4 w-full z-50">
+                <nav role="navigation" class="rounded-lg bg-gray-800 py-4 px-8 mr-12 h-full">
 
-                    <div class="flex items-center gap-4 pb-4 border-b-2 border-gray-50 h-14 -mr-10">
+                    <div class="flex items-center gap-4 pb-4 h-14 -mr-10">
                         <div class="flex -space-x-6">
                             <div class="h-7 w-7 bg-opacity-75 rounded-br-full bg-cyan-500">
 
@@ -73,32 +73,32 @@
 
                             </div>
                         </div>
-                        <h1 class="text-2xl font-medium">Tailorus</h1>
+                        <h1 class="text-2xl font-medium text-white">Tailorus</h1>
                     </div>
                     
-                    <div class="mt-4 -ml-4 -mr-6 relative overflow-y-auto overflow-x-hidden" style="height:85vh;">
+                    <div class="mt-4 -ml-4 -mr-6 relative overflow-y-auto scrollbar-black overflow-x-hidden" style="height:83vh;">
                         <span class="uppercase px-4 text-gray-200">Docs</span>
                         <ul class="space-y-4 mb-12 px-4 mt-8">
                             <li>
-                                <a href="" class="flex gap-4 text-gray-600">
+                                <a href="" class="flex gap-4 text-gray-50 hover:text-white transition">
                                     <img src="../../../public/images/icons/favorites.svg" class="w-6" alt="">
                                     Documentation
                                 </a>
                             </li>
                             <li>
-                                <a href="" class="flex gap-4 text-gray-600">
+                                <a href="" class="flex gap-4 text-gray-50 hover:text-white transition">
                                     <img src="../../../public/images/icons/atom.svg" class="w-6" alt="">
                                     Atomic css
                                 </a>
                             </li>
                             <li>
-                                <a href="" class="flex gap-4 text-gray-600">
+                                <a href="" class="flex gap-4 text-gray-50 hover:text-white transition">
                                     <img src="../../../public/images/icons/organism.svg" class="w-6" alt="">
                                     Atomic Design
                                 </a>
                             </li>
                             <li>
-                                <a href="" class="flex gap-4 text-gray-600">
+                                <a href="" class="flex gap-4 text-gray-50 hover:text-white transition">
                                     <img src="../../../public/images/icons/template.svg" class="w-6" alt="">
                                     Default look
                                 </a>
@@ -107,12 +107,12 @@
                         
                         <ul class="space-y-4">
                             <li class="pr-2">
-                                <div class="py-2 px-4 text-gray-700 bg-white uppercase">
+                                <div class="py-2 px-4 text-gray-300 uppercase">
                                     <a href="" class="block">Atoms</a>
                                 </div>
                                 <ul class="text-sm">
                                     <li>
-                                        <a href="" class="block py-2 px-5 rounded bg-cyan-100 bg-opacity-40 hover:bg-opacity-60 text-cyan-700">Avatar</a>
+                                        <a href="" class="block py-2 px-5 rounded bg-cyan-500 bg-opacity-10 hover:bg-opacity-20 text-cyan-500">Avatar</a>
                                     </li>
                                     <li>
                                         <a class="block py-2 px-5 hover:text-gray-800 transition" href="">Badges</a>
@@ -212,20 +212,20 @@
             <div class="lg:w-9/12 ml-auto h-screen">
                 <div class="container m-auto lg:-ml-8 lg:pr-0 px-4 pt-28 md:pb-12  pb-4">
                     <div class="lg:flex gap-8 lg:px-0 md:px-8 justify-between">
-                        <div>
+                        <div class="lg:w-5/5">
                             <div>
-                                <h1 class="text-5xl text-gray-900">Avatar</h1>
+                                <h1 class="text-5xl text-white">Avatar</h1>
                                 <p class="mt-4">An avatar represent a user with his face or initial it can be used in many molecules such as a card, a navbar, a list of users and more. We imagined it in more styles, choose the one that adapts to your design.</p>
                             </div>
                             
-                            <div class="space-y-24 mt-16">
+                            <div class="space-y-16 mt-16">
                                 <div>
                                     <h2 class="text-xl text-blueGray-700">Full rounded avatars</h2>
-                                    <div class="bg-white h-full rounded-2xl shadow mt-8 component-container transition duration-150">    
+                                    <div id="fullRoundedAvatar" class="bg-gradient-to-br from-cyan-400 to-indigo-600 h-full rounded-2xl mt-8 component-container transition duration-300">    
                                         <div class="relative tab">
-                                            <div class="absolute w-max right-4 z-20 top-4 flex items-center divide-x divide-gray-100 gap-4">
-                                                <nav class="tab-head p-1 rounded-md bg-gray-400 bg-opacity-20  text-sm relative transition duration-300">
-                                                    <div class="flex relative z-20 text-gray-600">
+                                            <div class="absolute w-max right-2 z-20 top-2 flex items-center divide-x divide-gray-100 gap-4">
+                                                <nav class="tab-head p-1 rounded-md bg-gray-900 bg-opacity-20 hover:bg-opacity-30  text-sm relative transition duration-300">
+                                                    <div class="flex relative z-20 text-gray-50">
                                                         <button data-target="preview"  class="tab-item md:px-3 px-1.5 py-1.5 hover:text-gray-50 focus:outline-none flex gap-1">
                                                             <svg fill="none" class="stroke-current w-5 h-5">
                                                                 <path d="M17.25 10c0 1-1.75 6.25-7.25 6.25S2.75 11 2.75 10 4.5 3.75 10 3.75 17.25 9 17.25 10z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -233,7 +233,7 @@
                                                             </svg>
                                                             <span>Preview</span>
                                                         </button>
-                                                        <button data-target="code" class="tab-item md:px-3 px-1.5 py-1.5 hover:text-gray-50 rounded-md focus:outline-none flex gap-1 transition">
+                                                        <button data-target="code" class="tab-item md:px-3 px-1.5 py-1.5 hover:text-cyan-900 rounded-md focus:outline-none flex gap-1 transition">
                                                             <svg fill="none" class="stroke-current w-5 h-5" >
                                                                 <path d="M13.75 6.75l3.5 3.25-3.5 3.25M6.25 13.25L2.75 10l3.5-3.25" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
                                                             </svg>
@@ -258,7 +258,7 @@
 
                                             <div class="relative">
                                                 <div data-name="preview" class="visible transform translate-y-0 opacity-100 tab-content w-full md:p-8 p-4 transtion duration-500 ease-in-out">
-                                                    <div class="flex md:justify-center flex-wrap items-end mt-14 lg:gap-16 md:gap-8 gap-4">
+                                                    <div class="flex md:justify-center flex-wrap items-end mt-14 md:gap-8 gap-4">
                                                         <img src="../../../public/images/avatars/girl2.jpg" class="w-8 h-8 rounded-full object-center object-cover" alt="">
                                                         <img src="../../../public/images/avatars/girl2.jpg" class="w-10 h-10 rounded-full object-center object-cover" alt="">
                                                         <img src="../../../public/images/avatars/girl.jpg" class="w-12 h-12 rounded-full object-center object-cover" alt="">
@@ -286,49 +286,76 @@
                                             </div>
                                         </div>
                                     </div>
-
-                                    <div class="hidden p-4 bg-gray-900 rounded-b-2xl relative select-none">
-                                        <div class="absolute top-2   right-2   w-max flex gap-4">
-                                            <div>
-                                                
-                                            </div>
-                                            <button class="text-sm text-white px-4 py-2 bg-gray-800 hover:bg-cyan-800 focus:bg-cyanA-700 rounded-md focus:outline-none">
-                                                Copy
-                                            </button>
-                                        </div>
-                                        
-                                        <div class="overflow-x-scroll scrollbar-black mt-8">
-                                            <xmp class="text-gray-500"><img src=".." class="w-12 h-12 rounded-full object-center object-cover" alt="avatar"></xmp>
-                                        </div>
-                                        
-                                    </div>
                                 </div>                    
             
-                                <div class="hidden">
-                                    <h2 class="text-xl text-blueGray-700">Rounded lg avatar</h2>
-                                    <div class="p-4 mt-8 bg-gray-50 white border border-gray-50 rounded-t-2xl">
-                                        <div class="flex flex-wrap items-end gap-4">
-                                            <img src="../../../public/images/avatars/girl2.jpg" class="w-10 h-10 rounded-lg object-center object-cover" alt="">
-                                            <img src="../../../public/images/avatars/girl.jpg" class="w-12 h-12 rounded-lg object-center object-cover" alt="">
-                                            <img src="../../../public/images/avatars/girl2.jpg" class="w-16 h-16 rounded-lg object-center object-cover" alt="">
-                                            <img src="../../../public/images/avatars/girl.jpg" class="w-20 h-20 rounded-lg object-center object-cover" alt="">
-                                            <img src="../../../public/images/avatars/meschac.jfif" class="w-24 h-24 rounded-lg object-center object-cover" alt="">
-                                        </div>
-                                    </div>
+                                <div>
+                                    <h2 class="text-xl text-blueGray-700">Rounded avatars</h2>
+                                    <div id="roundedAvatar" class="bg-white h-full rounded-2xl mt-8 component-container transition duration-150">    
+                                        <div class="relative tab">
+                                            <div class="absolute w-max right-4 z-20 top-4 flex items-center divide-x divide-gray-100 gap-4">
+                                                <nav class="tab-head p-1 rounded-md bg-gray-400 bg-opacity-20 hover:bg-opacity-30  text-sm relative transition duration-300">
+                                                    <div class="flex relative z-20 text-gray-600">
+                                                        <button data-target="preview"  class="tab-item md:px-3 px-1.5 py-1.5 hover:text-gray-50 focus:outline-none flex gap-1">
+                                                            <svg fill="none" class="stroke-current w-5 h-5">
+                                                                <path d="M17.25 10c0 1-1.75 6.25-7.25 6.25S2.75 11 2.75 10 4.5 3.75 10 3.75 17.25 9 17.25 10z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                                <circle cx="10" cy="10" r="2.25" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></circle>
+                                                            </svg>
+                                                            <span>Preview</span>
+                                                        </button>
+                                                        <button data-target="code" class="tab-item md:px-3 px-1.5 py-1.5 hover:text-cyan-900 rounded-md focus:outline-none flex gap-1 transition">
+                                                            <svg fill="none" class="stroke-current w-5 h-5" >
+                                                                <path d="M13.75 6.75l3.5 3.25-3.5 3.25M6.25 13.25L2.75 10l3.5-3.25" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                            </svg>
+                                                            <span>Code</span>
+                                                        </button>
+                                                    </div>
+                                                    
+                                                    <div class="tab-indicator absolute top-1 z-10 bg-cyan-500 hover:bg-cyan-600 rounded-md md:px-3 px-1.5 py-1.5 duration-300"></div>
+                                                </nav>
 
-                                    <div class="p-4 bg-gray-900 rounded-b-2xl relative select-none">
-                                        <div class="absolute top-2   right-2   w-max">
-                                            <button class="text-sm text-white px-4 py-2 bg-gray-800 hover:bg-cyan-800 focus:bg-cyanA-700 rounded-md focus:outline-none">
-                                                Copy
-                                            </button>
+                                                <div class="pl-2">
+                                                    <button class="text-sm text-cyan-500 p-2 hover:bg-cyan-400 hover:bg-opacity-20 focus:bg-opacity-40 focus:bg-cyan-500 rounded-md focus:outline-none">
+                                                        
+                                                        <svg class="w-5 h-5" viewBox="0 0 24 24">
+                                                            <path fill="currentColor" d="M19,3H14.82C14.25,1.44 12.53,0.64 11,1.2C10.14,1.5 9.5,2.16 9.18,3H5A2,2 0 0,0 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5A2,2 0 0,0 19,3M12,3A1,1 0 0,1 13,4A1,1 0 0,1 12,5A1,1 0 0,1 11,4A1,1 0 0,1 12,3M7,7H17V5H19V19H5V5H7V7M17,11H7V9H17V11M15,15H7V13H15V15Z" />
+                                                        </svg>
+                                                         
+                                                    </button>
+                                                </div>
+                                                
+                                            </div>
+
+                                            <div class="relative">
+                                                <div data-name="preview" class="visible transform translate-y-0 opacity-100 tab-content w-full md:p-8 p-4 transtion duration-500 ease-in-out">
+                                                    <div class="flex md:justify-center flex-wrap items-end mt-14 lg:gap-16 md:gap-8 gap-4">
+                                                        <img src="../../../public/images/avatars/girl2.jpg" class="w-8 h-8 rounded-lg object-center object-cover" alt="">
+                                                        <img src="../../../public/images/avatars/girl2.jpg" class="w-10 h-10 rounded-lg object-center object-cover" alt="">
+                                                        <img src="../../../public/images/avatars/girl.jpg" class="w-12 h-12 rounded-lg object-center object-cover" alt="">
+                                                        <img src="../../../public/images/avatars/girl2.jpg" class="w-16 h-16 rounded-lg object-center object-cover" alt="">
+                                                        <img src="../../../public/images/avatars/girl.jpg" class="w-20 h-20 rounded-lg object-center object-cover" alt="">
+                                                        <img src="../../../public/images/avatars/meschac.jfif" class="w-24 h-24 rounded-lg object-center object-cover" alt="">
+                                                    </div>
+                                                </div>
+                                                <div data-name="code" class="invisible text-sm transform -translate-y-10 opacity-0 tab-content absolute top-0 w-full pt-8 scrollbar-black rounded-xl transition duration-500 ease-in-out">
+                                                    <div>
+                                                        <pre class="rounded-xl">
+<code class="language-markup hightlight">
+&lt;div class="flex md:justify-center flex-wrap items-end mt-14 lg:gap-16 md:gap-8 gap-4"&gt;
+    &lt;img src="..." class="w-8 h-8 rounded-full object-center object-cover" alt=""&gt;
+    &lt;img src="..." class="w-10 h-10 rounded-full object-center object-cover" alt=""&gt;
+    &lt;img src="..." class="w-12 h-12 rounded-full object-center object-cover" alt=""&gt;
+    &lt;img src="..." class="w-16 h-16 rounded-full object-center object-cover" alt=""&gt;
+    &lt;img src="..." class="w-20 h-20 rounded-full object-center object-cover" alt=""&gt;
+    &lt;img src="..." class="w-24 h-24 rounded-full object-center object-cover" alt=""&gt;
+&lt;/div&gt;
+</code>
+                                                        </pre>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
-                                        
-                                        <div class="overflow-x-scroll scrollbar-black">
-                                            <xmp class="text-gray-500"><img src=".." class="w-12 h-12 rounded-full object-center object-cover" alt="avatar"></xmp>
-                                        </div>
-                                        
                                     </div>
-                                </div> 
+                                </div>
 
                                 <div class="hidden">
                                     <h2 class="text-xl text-blueGray-700">Rounded xl avatar</h2>
@@ -428,6 +455,21 @@
                                         </div>
                                     </div>
                                 </div>
+                            </div>
+                        </div>
+
+                        <div class="w-2/5 lg:block hidden">
+                            <div class="sticky top-20">
+                                <h5 class="text-md uppercase text-gray-50">On this page</h5>
+
+                                <ul class="mt-4 space-y-4 text-sm">
+                                    <li><a href="" class="hover:text-white transition text-cyan-400">Full rounded</a></li>
+                                    <li><a href="" class="hover:text-white transition">Rounded</a></li>
+                                    <li><a href="" class="hover:text-white transition">Default</a></li>
+                                    <li><a href="" class="hover:text-white transition">Initials</a></li>
+                                    <li><a href="" class="hover:text-white transition">Hover</a></li>
+                                    <li><a href="" class="hover:text-white transition">Status</a></li>
+                                </ul>
                             </div>
                         </div>
                     </div>
