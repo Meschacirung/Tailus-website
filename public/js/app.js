@@ -26,9 +26,9 @@ componentContainers.forEach(componentContainer =>{
             tabIndicator.style.left = (tabsize.left - tabProps.left) + "px";
     
             if (tabItem.getAttribute('data-target') == "code"){
-                componentContainer.classList.replace('bg-gradient-to-br', 'bg-gray-800');
+                componentContainer.classList.replace('bg-white', 'bg-gray-800');
             }else {
-                componentContainer.classList.replace('bg-gray-800', 'bg-gradient-to-br');
+                componentContainer.classList.replace('bg-gray-800','bg-white');
             }
     
             tabContents.forEach(tabContent =>{

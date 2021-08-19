@@ -40,11 +40,11 @@ body{
 }
 
 .scrollbar-black::-webkit-scrollbar-thumb {
-    @apply rounded md:bg-gray-500 bg-transparent;
+    @apply rounded md:bg-gray-100 bg-transparent;
 }
 
 .scrollbar-black::-webkit-scrollbar-thumb:hover {
-    @apply md:bg-cyan-400 bg-transparent;
+    @apply md:bg-cyan-300 bg-transparent;
 }
 
 .search .search-history{
