@@ -1,5 +1,5 @@
-# Tailorus
-Tailorus is a Material Design System UI Kit based on tailwindcss framework. 
+# Tailus
+Tailus is a Material Design System UI Kit based on tailwindcss framework. 
 Beautiful and simple atoms, molecules and organisms to help you to build prossionnal and modern User Interfaces. 
 Our components are atomic css (utilities classes) based, that means you can customize them at your own.
 
@@ -24,7 +24,6 @@ Start your project with our atoms, molecules and organisms templates containing 
 
 We use external ressources to build our components, most of them are not free...
 
-* Tailwindcss
-* Material Design System
+* Unsplash
 * Flaticon
 * Storyset
