@@ -41,7 +41,6 @@ componentContainers.forEach(componentContainer =>{
                         tabContent.classList.replace('invisible', 'visible');
                         tabContent.classList.replace('-translate-y-10', 'translate-y-0');
                     }
-                    componentContainer.style.height = tabContent.getBoundingClientRect().height + "px";
                 }else{
                     tabContent.classList.replace('opacity-100', 'opacity-0');
                     tabContent.classList.replace('visible', 'invisible');
