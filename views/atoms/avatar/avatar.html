@@ -39,8 +39,8 @@
     </header>
     <div class=" ">
         <div class="flex">
-            <div class="fixed lg:block top-0 lg:w-3/12 md:w-6/12 w-9/12 z-50 transform lg:translate-x-0 -translate-x-96 transition duration-500 ease-in-out" id="sidebar">
-                <nav role="navigation" class="bg-white py-4 px-6 lg:mr-12 h-full border-r2 shadow-md border-gray-50">
+            <div class="fixed lg:block top-0 lg:w-3/12 md:w-6/12 w-full z-50 transform lg:translate-x-0 -translate-x-96 transition duration-500 ease-in-out lg:bg-transparent bg-gray-900 bg-opacity-10 backdrop-filter backdrop-blur" id="sidebar">
+                <nav role="navigation" class="bg-white py-4 px-6 lg:mr-12 h-full md:w-full w-9/12 lg:shadow-md shadow-2xl border-gray-50">
 
                     <div class="flex items-center gap-4 pb-6">
                         
@@ -409,10 +409,12 @@
     </div>
 
     <div class="fixed lg:hidden w-max z-50 md:bottom-12 md:right-12 right-4 bottom-4">
-        <button id="docs" class="relative h-14 w-14 rounded-full shadow-xl bg-gray-900 text-cyan-500 hover:text-cyan-600 hover:shadow-2xl active:bg-cyan-700 transform focus:outline-none transition duration-300 ease-in-out">
-            <span id="i1" class="absolute left-0 right-0 m-auto top-1.5 material-icons transition" style="font-size:28px">expand_less</span>
-            <span id="i2" class="absolute left-0 right-0 m-auto bottom-1.5 material-icons transition" style="font-size:28px">expand_more</span>
-          </button>
+        <button id="docs" class="relative h-14 w-14 rounded-full shadow-xl bg-gray-900 text-cyan-300 hover:text-cyan-200 hover:shadow-2xl active:bg-cyan-700 transform focus:outline-none transition duration-300 ease-in-out">
+            <div class="btnContent transform relative w-full h-full transition">
+                <span id="i1" class="absolute left-0 right-0 m-auto top-1.5 material-icons transition" style="font-size:28px">expand_less</span>
+                <span id="i2" class="absolute left-0 right-0 m-auto bottom-1.5 material-icons transition" style="font-size:28px">expand_more</span>
+            </div>
+        </button>
     </div>
 
     <script src="../../../public/js/app.js"></script>

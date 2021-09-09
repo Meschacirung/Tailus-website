@@ -8,6 +8,7 @@ let tabContents = document.querySelectorAll('.tab-content');
 let componentContainers = document.querySelectorAll('.component-container')
 
 let sideBtn = document.querySelector('#docs')
+let sideBtnc = document.querySelector('.btnContent')
 let sideBar = document.querySelector('#sidebar')
 
 let arrowTop = document.querySelector('#i1').classList
@@ -18,12 +19,12 @@ sideBtn.addEventListener('click', ()=>{
         sideBar.classList.replace('-translate-x-96', 'translate-x-0')
         arrowTop.replace('top-1.5', 'bottom-2.5')
         arrowBottom.replace('bottom-1.5', 'top-2.5')
-        sideBtn.classList.add('rotate-180')
+        sideBtnc.classList.add('rotate-180')
     }else{
         sideBar.classList.replace('translate-x-0', '-translate-x-96')
         arrowBottom.replace('top-2.5', 'bottom-1.5')
         arrowTop.replace('bottom-2.5', 'top-1.5')
-        sideBtn.classList.replace('rotate-180', 'rotate-0')
+        sideBtnc.classList.replace('rotate-180', 'rotate-0')
     }
 })
 
