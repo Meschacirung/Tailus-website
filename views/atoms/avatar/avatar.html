@@ -39,8 +39,8 @@
     </header>
     <div class=" ">
         <div class="flex">
-            <div class="fixed lg:block top-0 lg:w-3/12 md:w-6/12 w-full z-50 transform lg:translate-x-0 -translate-x-96 transition duration-500 ease-in-out" id="sidebar">
-                <nav role="navigation" class="bg-white py-4 px-6 mr-12 h-full border-r2 shadow-md border-gray-50">
+            <div class="fixed lg:block top-0 lg:w-3/12 md:w-6/12 w-9/12 z-50 transform lg:translate-x-0 -translate-x-96 transition duration-500 ease-in-out" id="sidebar">
+                <nav role="navigation" class="bg-white py-4 px-6 lg:mr-12 h-full border-r2 shadow-md border-gray-50">
 
                     <div class="flex items-center gap-4 pb-6">
                         
@@ -409,8 +409,9 @@
     </div>
 
     <div class="fixed lg:hidden w-max z-50 md:bottom-12 md:right-12 right-4 bottom-4">
-        <button id="docs" class="h-14 w-14 flex rounded-full shadow-xl bg-white text-cyan-500 hover:TEXT-cyan-600 hover:shadow-2xl active:bg-cyan-700 focus:outline-none transition">
-            <span class="material-icons m-auto">unfold_more</span>
+        <button id="docs" class="relative h-14 w-14 rounded-full shadow-xl bg-gray-900 text-cyan-500 hover:TEXT-cyan-600 hover:shadow-2xl active:bg-cyan-700 focus:outline-none transition">
+            <span id="i1" class="absolute left-0 right-0 m-auto -translate-y-2 top-1.5 material-icons transition" style="font-size:28px">expand_less</span>
+            <span id="i2" class="absolute left-0 right-0 m-auto -translate-y-2 bottom-1.5 material-icons transition" style="font-size:28px">expand_more</span>
           </button>
     </div>
 

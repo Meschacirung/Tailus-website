@@ -10,11 +10,19 @@ let componentContainers = document.querySelectorAll('.component-container')
 let sideBtn = document.querySelector('#docs')
 let sideBar = document.querySelector('#sidebar')
 
+let arrowTop = document.querySelector('#i1').classList
+let arrowBottom = document.querySelector('#i2').classList
+
 sideBtn.addEventListener('click', ()=>{
     if (sideBar.classList.contains('-translate-x-96')){
         sideBar.classList.replace('-translate-x-96', 'translate-x-0')
+        arrowTop.replace('top-1.5', 'bottom-2.5')
+        arrowBottom.replace('bottom-1.5', 'top-2.5')
+        arrowTop.replace('-translate-y-2', 'translate-y-0')
     }else{
         sideBar.classList.replace('translate-x-0', '-translate-x-96')
+        arrowBottom.replace('top-2.5', 'bottom-1.5')
+        arrowTop.replace('bottom-2.5', 'top-1.5')
     }
 })
 
