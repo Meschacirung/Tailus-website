@@ -64,11 +64,11 @@ pre[class*="language-"] {
 .token.tag,
 .token.namespace,
 .token.deleted {
-	color: #e2777a;
+	color: #ff8896;
 }
 
 .token.attr-name{
-	color: rgb(94, 230, 248);
+	color: rgb(44, 255, 255);
 }
 .token.function-name {
 	color: #6196cc;
@@ -103,7 +103,7 @@ pre[class*="language-"] {
 }
 
 .token.attr-value{
-	color: #bde688;
+	color: #d2e688;
 }
 
 .token.operator,
