@@ -2,7 +2,7 @@ const colors = require('tailwindcss/colors')
 
 module.exports = {
   mode : ['jit'],
-  purge: [],
+  purge: ['./views/atoms/**/*.html'],
   presets: [],
   darkMode: false, // or 'media' or 'class'
   theme: {
@@ -19,11 +19,8 @@ module.exports = {
 
       black: colors.black,
       white: colors.white,
-      blueGray: colors.blueGray, 
-      gray: colors.gray,
+      gray: colors.blueGray,
       brown: colors.brown,
-      deepOrange: colors.deepOrange,
-      deepOrangeA: colors.deepOrangeA,
       orange: colors.orange,
       orangeA: colors.orangeA,
       amber: colors.amber,

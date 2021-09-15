@@ -5,6 +5,7 @@ let tabProps = tabs.getBoundingClientRect();
 let indicatorRight = tabIndicator.getBoundingClientRect().left;
 
 let tabContents = document.querySelectorAll('.tab-content');
+let components = document.querySelectorAll('.component')
 let componentContainers = document.querySelectorAll('.component-container')
 
 let sideBtn = document.querySelector('#docs')
@@ -28,12 +29,9 @@ sideBtn.addEventListener('click', ()=>{
     }
 })
 
-
-document.addEventListener('DOMContentLoaded', ()=>{
-    let tabItemsProps = tabItems[0].getBoundingClientRect();
-    tabIndicator.style.height = tabItemsProps.height + "px";
-    tabIndicator.style.width = tabItemsProps.width + "px";
-})  
+let tabItemsProps = tabItems[0].getBoundingClientRect();
+tabIndicator.style.height = tabItemsProps.height + "px";
+tabIndicator.style.width = tabItemsProps.width + "px";
 
 tabItems.forEach(tabItem => {
     tabItem.addEventListener('click', ()=>{
@@ -46,15 +44,15 @@ tabItems.forEach(tabItem => {
 
         tabContents.forEach(tabContent =>{
             let tabName = tabContent.getAttribute('data-name')
-            componentContainers.forEach(componentContainer =>{
-                componentContainer.style.height = tabContent.getBoundingClientRect().height + "px"
-            })
             if(tabTarget == tabName){
                 if (tabContent.classList.contains('invisible')){
                     tabContent.classList.replace('opacity-0', 'opacity-100');
                     tabContent.classList.replace('invisible', 'visible');
                     tabContent.classList.replace('-translate-y-10', 'translate-y-0');
                 }
+                componentContainers.forEach(componentContainer =>{
+                    componentContainer.style.height = tabContent.getBoundingClientRect().height + "px"
+                })
             }else{
                 tabContent.classList.replace('opacity-100', 'opacity-0');
                 tabContent.classList.replace('visible', 'invisible');

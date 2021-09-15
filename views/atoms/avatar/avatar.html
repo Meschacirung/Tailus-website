@@ -13,10 +13,10 @@
 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
-<body class="text-gray-600 transition bg-gradient-to-b from-white to-gray-50 bg-fixed">
+<body class="text-gray-600 transition bg-gradient-to-b from-white to-gray-200 bg-fixed">
     <header class="fixed w-full top-0 z-50 bg-white">
         <nav class="container lg:w-9/12 ml-auto pt-2 lg:px-6 md:px-12 px-4">
-            <div class="flex items-center gap-8 justify-between lg:-ml-10 md:border-b-2 border-gray-50 pb-2">
+            <div class="flex items-center gap-8 justify-between lg:-ml-10 md:border-b-2 border-gray-200 pb-2">
 
                 <div class="flex items-center gap-2">
                     <img src="../../../public/images/icon.svg" class="w-12 lg:hidden" alt="">
@@ -25,7 +25,7 @@
 
                 <div class="flex items-center gap-4">
                     <div>
-                        <a href="#" title="Profile" class="bg-white flex gap-2 items-center p-1.5 border border-gray-50 rounded-full hover:border-transparent hover:shadow-md transition">
+                        <a href="#" title="Profile" class="bg-white flex gap-2 items-center p-1.5 border border-gray-200 rounded-full hover:border-transparent hover:shadow-md transition">
                             <img src="../../../public/images/avatars/girl.jpg" class="h-8 w-8 object-cover rounded-full"/> 
                             <div class="-mb-1.5">
                                 <h4 class="text-gray-600 text-sm font-medium pr-2.5 leading-none -mb-1">John Doe</h4>
@@ -40,7 +40,7 @@
     <div class=" ">
         <div class="flex">
             <div class="fixed lg:block top-0 lg:w-3/12 md:w-6/12 w-9/12 z-50 transform lg:translate-x-0 -translate-x-96 transition duration-500 ease-in-out" id="sidebar">
-                <nav role="navigation" class="bg-white py-4 px-6 lg:mr-12 h-full lg:shadow-md shadow-lg border-gray-50">
+                <nav role="navigation" class="bg-white py-4 px-6 lg:mr-12 h-full lg:shadow-md shadow-lg">
 
                     <div class="flex items-center gap-4 pb-6">
                         
@@ -55,7 +55,7 @@
                                         <path id="Icon_awesome-search" data-name="search" d="M35.508,31.127l-7.01-7.01a1.686,1.686,0,0,0-1.2-.492H26.156a14.618,14.618,0,1,0-2.531,2.531V27.3a1.686,1.686,0,0,0,.492,1.2l7.01,7.01a1.681,1.681,0,0,0,2.384,0l1.99-1.99a1.7,1.7,0,0,0,.007-2.391Zm-20.883-7.5a9,9,0,1,1,9-9A8.995,8.995,0,0,1,14.625,23.625Z"></path>
                                     </svg> 
                                 </div>
-                                <input type="search" placeholder="Rechercher" name="search" id="search" class="text-sm text-gray-500 placeholder-gray-500 w-full rounded py-3 pr-4 pl-12 bg-gray-50 bg-opacity-50 outline-none focus:bg-transparent focus:rounded-3xl transition-all">                         
+                                <input type="search" placeholder="Rechercher" name="search" id="search" class="text-sm text-gray-500 placeholder-gray-500 w-full rounded py-3 pr-4 pl-12 bg-gray-200 bg-opacity-75 outline-none focus:bg-transparent focus:rounded-3xl transition-all">                         
                             </div>
                         </form>
                     </div>
@@ -197,20 +197,22 @@
                 <div class="container m-auto lg:-ml-8 lg:pr-0 pt-28 md:pb-12 md:pr-12 md:pl-12 lg:pl-4 px-4  pb-4">
                     <div class="h-full">
                         <div>
-                            <h1 class="text-5xl text-gray-800">Avatar</h1>
+                            <h1 class="text-5xl text-gray-700">Avatar</h1>
                             <p class="mt-4 mb-6 lg:w-8/12">An avatar represent a user with his face or initial it can be used in many molecules such as a card, a navbar, a list of users and more.</p>
                             
-                            <a href="" class="flex w-max rounded-full gap-2 text-blue-500 border py-2 px-4 text-sm hover:border-transparent hover:shadow hover:bg-white transition"><span class="material-icons" style="font-size:20px;">link</span> Material Design doc</a>
+                            <a href="" class="flex w-max rounded-full gap-2 text-blue-500 border border-gray-300 py-2 px-4 text-sm hover:border-transparent hover:shadow hover:bg-white transition">
+                                <span class="material-icons" style="font-size:20px;">link</span> Material Design doc
+                            </a>
                         </div>
                         
                         <div class="space-y-16 mt-16">
-                            <div>
-                                <div class=" relative md:flex flex-wrap items-end justify-between">
-                                    <h2 class="text-xl text-blueGray-700">Full rounded avatars</h2>
-                                    <div class="z-20 top-2 md:mt-0 mt-4 flex items-center justify-between divide-x divide-gray-100 gap-4">
-                                        <nav class="tab-head p-1 rounded-md bg-gray-100 bg-opacity-60 hover:bg-opacity-80  text-sm relative transition duration-300">
+                            <div class="component" id="mdHight">
+                                <div class="relative flex flex-wrap items-end justify-between">
+                                    <h2 class="sm:text-xl text-lg text-blueGray-700">Material Hight empathis</h2>
+                                    <div class="z-20 md:mt-0 w-max ml-auto mt-4 flex items-center justify-between divide-x divide-gray-100 gap-4">
+                                        <nav class="tab-head p-1 rounded-md bg-gray-200 bg-opacity-60 hover:bg-opacity-80  text-sm relative transition duration-300">
                                             <div class="flex relative z-20 text-gray-500">
-                                                <button data-target="preview"  class="tab-item md:px-3 px-1.5 py-1.5 hover:text-cyan-9  00 focus:outline-none flex gap-1">
+                                                <button data-target="preview"  class="tab-item md:px-3 px-1.5 py-1.5 hover:text-cyan-900 focus:outline-none flex gap-1">
                                                     <svg fill="none" class="stroke-current w-5 h-5">
                                                         <path d="M17.25 10c0 1-1.75 6.25-7.25 6.25S2.75 11 2.75 10 4.5 3.75 10 3.75 17.25 9 17.25 10z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
                                                         <circle cx="10" cy="10" r="2.25" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></circle>
@@ -224,105 +226,42 @@
                                                     <span class="md:block hidden">Code</span>
                                                 </button>
                                             </div>
-                                            <div class="tab-indicator absolute top-1 z-10 bg-white shadow hover:bg-cyan-600 rounded-md md:px-3 px-1.5 py-1.5 duration-100"></div>
+                                            <div class="tab-indicator absolute top-1 z-10 bg-white shadow hover:bg-cyan-600 rounded-md md:px-3 px-1.5 py-1.5 transition duration-100"></div>
                                         </nav>
-                                        <div class="pl-2">
-                                            <button class="text-sm text-gray-600 p-2 bg-cyan-200 bg-opacity-0 hover:text-cyan-700 hover:bg-opacity-20 active:bg-opacity-40 rounded-md focus:outline-none">
-                                                <svg class="w-5 h-5" viewBox="0 0 24 24">
-                                                    <path fill="currentColor" d="M19,3H14.82C14.25,1.44 12.53,0.64 11,1.2C10.14,1.5 9.5,2.16 9.18,3H5A2,2 0 0,0 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5A2,2 0 0,0 19,3M12,3A1,1 0 0,1 13,4A1,1 0 0,1 12,5A1,1 0 0,1 11,4A1,1 0 0,1 12,3M7,7H17V5H19V19H5V5H7V7M17,11H7V9H17V11M15,15H7V13H15V15Z" />
-                                                </svg>
-                                            </button>
-                                        </div>
                                     </div>
                                 </div>
                                 
-                                <div id="fullRoundedAvatar" class="my-8 component-container">    
+                                <div class="my-8 component-container">    
                                     <div>
                                         <div class="relative">
                                             <div data-name="preview" class="bg-white rounded-2xl visible transform translate-y-0 opacity-100 tab-content w-full md:p-8 p-4 transtion duration-500 ease-in-out">
-                                                <div class="flex flex-wrap lg:justify-center lg:gap-16 md:gap-8 gap-4">
-                                                    <div class="flex flex-wrap justify-center gap-4">
-                                                        <a href="#" title="facebook" target="blank" class="h-10 w-10 flex items-center rounded-full bg-white text-gray-500  hover:text-blue-500 focus:bg-blue-100 focus:outline-none transition">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="m-auto" viewBox="0 0 16 16">
-                                                            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
-                                                        </svg>
-                                                        </a>
-                                                
-                                                        <a href="#" title="youtube" target="blank" class="h-10 w-10 flex items-center rounded-full bg-white text-gray-500 hover:text-red-500 focus:bg-red-100 focus:outline-none transition">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="m-auto" viewBox="0 0 16 16">
-                                                            <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z" />
-                                                        </svg>
-                                                        </a>
-                                                
-                                                        <a href="#" title="twitter" target="blank" class="h-10 w-10 flex items-center rounded-full bg-white text-gray-500 hover:text-sky-500 focus:bg-sky-100 focus:outline-none transition">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="m-auto" viewBox="0 0 16 16">
-                                                            <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
-                                                        </svg>
-                                                        </a>
-                                                    </div>
-                                                
-                                                    <div class="flex flex-wrap justify-center gap-4">
-                                                        <a href="#" title="facebook" target="blank" class="h-10 w-10 flex items-center border  rounded-full bg-gray-white text-blue-500 hover:border-blue-200 hover:text-blue-600 focus:bg-blue-100 focus:outline-none transition">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="m-auto" viewBox="0 0 16 16">
-                                                            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
-                                                        </svg>
-                                                        </a>
-                                                
-                                                        <a href="#" title="youtube" target="blank" class="h-10 w-10 flex items-center border  rounded-full bg-gray-white text-red-500 hover:border-red-200 hover:text-red-600 focus:bg-red-100 focus:outline-none transition">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="m-auto" viewBox="0 0 16 16">
-                                                            <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z" />
-                                                        </svg>
-                                                        </a>
-                                                
-                                                        <a href="#" title="twitter" target="blank" class="h-10 w-10 flex items-center border  rounded-full bg-gray-white text-sky-500 hover:border-sky-200 hover:text-sky-500 focus:bg-cyan-100 focus:outline-none transition">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="m-auto" viewBox="0 0 16 16">
-                                                            <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
-                                                        </svg>
-                                                        </a>
-                                                    </div>
-                                                
-                                                    <div class="flex flex-wrap justify-center gap-4">
-                                                        <a href="#" title="facebook" target="blank" class="h-10 w-10 flex items-center rounded-full bg-blue-50 text-blue-500 hover:bg-blue-100 hover:text-blue-600 focus:bg-blue-100 focus:outline-none transition">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="m-auto" viewBox="0 0 16 16">
-                                                            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
-                                                        </svg>
-                                                        </a>
-                                                
-                                                        <a href="#" title="youtube" target="blank" class="h-10 w-10 flex items-center rounded-full bg-red-50 text-red-500 hover:bg-red-100 hover:text-red-600 focus:bg-red-100 focus:outline-none transition">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="m-auto" viewBox="0 0 16 16">
-                                                            <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z" />
-                                                        </svg>
-                                                        </a>
-                                                
-                                                        <a href="#" title="twitter" target="blank" class="h-10 w-10 flex items-center rounded-full bg-sky-50 text-sky-500 hover:bg-cyan-100 hover:text-sky-600 focus:bg-sky-100 focus:outline-none transition">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="m-auto" viewBox="0 0 16 16">
-                                                            <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
-                                                        </svg>
-                                                        </a>
-                                                    </div>
-                                                
-                                                    <div class="flex flex-wrap justify-center gap-4">
-                                                        <a href="#" title="facebook" target="blank" class="h-10 w-10 flex items-center rounded-full bg-blue-500 text-white hover:bg-blue-600 focus:bg-blue-700 focus:outline-none transition">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="m-auto" viewBox="0 0 16 16">
-                                                            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
-                                                        </svg>
-                                                        </a>
-                                                
-                                                        <a href="#" title="youtube" target="blank" class="h-10 w-10 flex items-center rounded-full bg-red-500 text-white hover:bg-red-600 focus:bg-red-700 focus:outline-none transition">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="m-auto" viewBox="0 0 16 16">
-                                                            <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z" />
-                                                        </svg>
-                                                        </a>
-                                                
-                                                        <a href="#" title="twitter" target="blank" class="h-10 w-10 flex items-center rounded-full bg-sky-500 text-white hover:bg-sky-600 focus:bg-sky-700 focus:outline-none transition">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="m-auto" viewBox="0 0 16 16">
-                                                            <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
-                                                        </svg>
-                                                        </a>
-                                                    </div>
+                                                <div class="flex flex-wrap lg:justify-center items-end md:gap-8 gap-4">
+                                                    <button title="I'm a button" class="before:absolute before:translate-x-[-50%] before:translate-y-[-50%] before:top-[50%] before:left-[50%] before:z-0 before:w-0 before:pt-0 before:rounded-full before:bg-blue-100 before:bg-opacity-30
+                                                                                        active:before:w-[200%] active:before:pt-[200%] active:before:transition-all active:before:duration-500 active:before:ease-out
+                                                                                        relative overflow-hidden px-6 py-2.5 shadow-md rounded-lg bg-blue-500 text-white text-xs uppercase font-medium tracking-widest hover:bg-blue-600 focus:bg-blue-700 hover:shadow-lg focus:outline-none transition">
+                                                        <span class="relative z-10">Button</span>
+                                                    </button>
+                                                    <button title="I'm a button" class="before:absolute before:translate-x-[-50%] before:translate-y-[-50%] before:top-[50%] before:left-[50%] before:z-0 before:w-0 before:pt-0 before:rounded-full before:bg-blue-100 before:bg-opacity-30
+                                                                                        active:before:w-[200%] active:before:pt-[200%] active:before:transition-all active:before:duration-500 active:before:ease-out
+                                                                                        relative overflow-hidden px-7 py-3 shadow-md rounded-lg bg-blue-500 text-white text-sm uppercase font-medium tracking-widest hover:bg-blue-600 focus:bg-blue-700 hover:shadow-lg focus:outline-none transition">
+                                                        <span class="relative z-10">Button</span>
+                                                    </button>
+                                                    <button title="I'm a button" class="before:absolute before:translate-x-[-50%] before:translate-y-[-50%] before:top-[50%] before:left-[50%] before:z-0 before:w-0 before:pt-0 before:rounded-full before:bg-blue-100 before:bg-opacity-30
+                                                                                        active:before:w-[200%] active:before:pt-[200%] active:before:transition-all active:before:duration-500 active:before:ease-out
+                                                                                        relative overflow-hidden px-8 py-4 shadow-md rounded-lg bg-blue-500 text-white text-base uppercase font-medium tracking-widest hover:bg-blue-600 focus:bg-blue-700 hover:shadow-lg focus:outline-none transition">
+                                                        <span class="relative z-10">Button</span>
+                                                    </button>
                                                 </div>
                                             </div>
                                             <div data-name="code" class="tab-content absolute top-0 w-full bg-gray-800 rounded-2xl invisible text-sm transform -translate-y-10 opacity-0 p-2 transition duration-500 ease-in-out" >
+                                                <div class="absolute right-2 w-max ml-auto">
+                                                    <button class="inline-flex gap-1.5 text-sm text-gray-800 p-2 px-3 bg-cyan-300 hover:bg-cyan-200 focus:bg-cyan-200 active:bg-cyan-500 shadow-lg rounded-md rounded-tr-xl focus:outline-none">
+                                                        <svg class="w-5 h-5" viewBox="0 0 24 24">
+                                                            <path fill="currentColor" d="M19,3H14.82C14.25,1.44 12.53,0.64 11,1.2C10.14,1.5 9.5,2.16 9.18,3H5A2,2 0 0,0 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5A2,2 0 0,0 19,3M12,3A1,1 0 0,1 13,4A1,1 0 0,1 12,5A1,1 0 0,1 11,4A1,1 0 0,1 12,3M7,7H17V5H19V19H5V5H7V7M17,11H7V9H17V11M15,15H7V13H15V15Z" />
+                                                        </svg>
+                                                        <span>Copy</span>
+                                                    </button>
+                                                </div>
                                                 <pre class="overflow-auto scrollbar-black rounded-xl language-markup hightlight" style="height:65vh;">
 <code>
 &lt;div class="flex flex-wrap justify-center gap-4"&gt;
@@ -342,60 +281,6 @@
     &lt;/svg&gt;
 &lt;/a&gt;
 &lt;/div&gt;
-
-&lt;div class="flex flex-wrap justify-center gap-4"&gt;
-&lt;a href="#" title="facebook" target="blank" class="h-10 w-10 flex items-center border  rounded-full bg-gray-white text-blue-500 hover:border-blue-200 hover:text-blue-600 focus:bg-blue-100 focus:outline-none transition"&gt;
-    &lt;svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="m-auto" viewBox="0 0 16 16"&gt;
-    &lt;path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" /&gt;
-    &lt;/svg&gt;
-&lt;/a&gt;
-&lt;a href="#" title="youtube" target="blank" class="h-10 w-10 flex items-center border  rounded-full bg-gray-white text-red-500 hover:border-red-200 hover:text-red-600 focus:bg-red-100 focus:outline-none transition"&gt;
-    &lt;svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="m-auto" viewBox="0 0 16 16"&gt;
-    &lt;path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z" /&gt;
-    &lt;/svg&gt;
-&lt;/a&gt;
-&lt;a href="#" title="twitter" target="blank" class="h-10 w-10 flex items-center border  rounded-full bg-gray-white text-sky-500 hover:border-sky-200 hover:text-sky-500 focus:bg-cyan-100 focus:outline-none transition"&gt;
-    &lt;svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="m-auto" viewBox="0 0 16 16"&gt;
-    &lt;path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" /&gt;
-    &lt;/svg&gt;
-&lt;/a&gt;
-&lt;/div&gt;
-
-&lt;div class="flex flex-wrap justify-center gap-4"&gt;
-&lt;a href="#" title="facebook" target="blank" class="h-10 w-10 flex items-center rounded-full bg-blue-50 text-blue-500 hover:bg-blue-100 hover:text-blue-600 focus:bg-blue-100 focus:outline-none transition"&gt;
-    &lt;svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="m-auto" viewBox="0 0 16 16"&gt;
-    &lt;path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" /&gt;
-    &lt;/svg&gt;
-&lt;/a&gt;
-&lt;a href="#" title="youtube" target="blank" class="h-10 w-10 flex items-center rounded-full bg-red-50 text-red-500 hover:bg-red-100 hover:text-red-600 focus:bg-red-100 focus:outline-none transition"&gt;
-    &lt;svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="m-auto" viewBox="0 0 16 16"&gt;
-    &lt;path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z" /&gt;
-    &lt;/svg&gt;
-&lt;/a&gt;
-&lt;a href="#" title="twitter" target="blank" class="h-10 w-10 flex items-center rounded-full bg-sky-50 text-sky-500 hover:bg-cyan-100 hover:text-sky-600 focus:bg-sky-100 focus:outline-none transition"&gt;
-    &lt;svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="m-auto" viewBox="0 0 16 16"&gt;
-    &lt;path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" /&gt;
-    &lt;/svg&gt;
-&lt;/a&gt;
-&lt;/div&gt;
-
-&lt;div class="flex flex-wrap justify-center gap-4"&gt;
-&lt;a href="#" title="facebook" target="blank" class="h-10 w-10 flex items-center rounded-full bg-blue-500 text-white hover:bg-blue-600 focus:bg-blue-700 focus:outline-none transition"&gt;
-    &lt;svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="m-auto" viewBox="0 0 16 16"&gt;
-    &lt;path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" /&gt;
-    &lt;/svg&gt;
-&lt;/a&gt;
-&lt;a href="#" title="youtube" target="blank" class="h-10 w-10 flex items-center rounded-full bg-red-500 text-white hover:bg-red-600 focus:bg-red-700 focus:outline-none transition"&gt;
-    &lt;svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="m-auto" viewBox="0 0 16 16"&gt;
-    &lt;path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z" /&gt;
-    &lt;/svg&gt;
-&lt;/a&gt;
-&lt;a href="#" title="twitter" target="blank" class="h-10 w-10 flex items-center rounded-full bg-sky-500 text-white hover:bg-sky-600 focus:bg-sky-700 focus:outline-none transition"&gt;
-    &lt;svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="m-auto" viewBox="0 0 16 16"&gt;
-    &lt;path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" /&gt;
-    &lt;/svg&gt;
-&lt;/a&gt;
-&lt;/div&gt;
 </code> 
                                                 </pre>
                                             </div>
@@ -403,12 +288,12 @@
                                     </div>
                                 </div>
                             </div> 
-                            
-                            <div>
-                                <div class=" relative md:flex flex-wrap items-end justify-between">
-                                    <h2 class="text-xl text-blueGray-700">Full rounded avatars</h2>
-                                    <div class="z-20 top-2 md:mt-0 mt-4 flex items-center justify-between divide-x divide-gray-100 gap-4">
-                                        <nav class="tab-head p-1 rounded-md bg-gray-100 bg-opacity-60 hover:bg-opacity-80  text-sm relative transition duration-300">
+
+                            <div class="component" id="mdMedium">
+                                <div class=" relative flex flex-wrap items-end justify-between">
+                                    <h2 class="sm:text-xl text-lg text-blueGray-700">Material medium empathis</h2>
+                                    <div class="z-20 md:mt-0 w-max ml-auto mt-4 flex items-center justify-between divide-x divide-gray-100 gap-4">
+                                        <nav class="tab-head p-1 rounded-md bg-gray-200 bg-opacity-60 hover:bg-opacity-80  text-sm relative transition duration-300">
                                             <div class="flex relative z-20 text-gray-500">
                                                 <button data-target="preview"  class="tab-item md:px-3 px-1.5 py-1.5 hover:text-cyan-9  00 focus:outline-none flex gap-1">
                                                     <svg fill="none" class="stroke-current w-5 h-5">
@@ -426,13 +311,6 @@
                                             </div>
                                             <div class="tab-indicator absolute top-1 z-10 bg-white shadow hover:bg-cyan-600 rounded-md md:px-3 px-1.5 py-1.5 duration-100"></div>
                                         </nav>
-                                        <div class="pl-2">
-                                            <button class="text-sm text-gray-600 p-2 bg-cyan-200 bg-opacity-0 hover:text-cyan-700 hover:bg-opacity-20 active:bg-opacity-40 rounded-md focus:outline-none">
-                                                <svg class="w-5 h-5" viewBox="0 0 24 24">
-                                                    <path fill="currentColor" d="M19,3H14.82C14.25,1.44 12.53,0.64 11,1.2C10.14,1.5 9.5,2.16 9.18,3H5A2,2 0 0,0 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5A2,2 0 0,0 19,3M12,3A1,1 0 0,1 13,4A1,1 0 0,1 12,5A1,1 0 0,1 11,4A1,1 0 0,1 12,3M7,7H17V5H19V19H5V5H7V7M17,11H7V9H17V11M15,15H7V13H15V15Z" />
-                                                </svg>
-                                            </button>
-                                        </div>
                                     </div>
                                 </div>
                                 
@@ -523,806 +401,14 @@
                                                 </div>
                                             </div>
                                             <div data-name="code" class="tab-content absolute top-0 w-full bg-gray-800 rounded-2xl invisible text-sm transform -translate-y-10 opacity-0 p-2 transition duration-500 ease-in-out" >
-                                                <pre class="overflow-auto scrollbar-black rounded-xl language-markup hightlight" style="height:65vh;">
-<code>
-&lt;div class="flex flex-wrap justify-center gap-4"&gt;
-&lt;a href="#" title="facebook" target="blank" class="h-10 w-10 flex items-center rounded-full bg-white text-gray-500  hover:text-blue-500 focus:bg-blue-100 focus:outline-none transition"&gt;
-    &lt;svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="m-auto" viewBox="0 0 16 16"&gt;
-    &lt;path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" /&gt;
-    &lt;/svg&gt;
-&lt;/a&gt;
-&lt;a href="#" title="youtube" target="blank" class="h-10 w-10 flex items-center rounded-full bg-white text-gray-500 hover:text-red-500 focus:bg-red-100 focus:outline-none transition"&gt;
-    &lt;svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="m-auto" viewBox="0 0 16 16"&gt;
-    &lt;path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z" /&gt;
-    &lt;/svg&gt;
-&lt;/a&gt;
-&lt;a href="#" title="twitter" target="blank" class="h-10 w-10 flex items-center rounded-full bg-white text-gray-500 hover:text-sky-500 focus:bg-sky-100 focus:outline-none transition"&gt;
-    &lt;svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="m-auto" viewBox="0 0 16 16"&gt;
-    &lt;path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" /&gt;
-    &lt;/svg&gt;
-&lt;/a&gt;
-&lt;/div&gt;
-
-&lt;div class="flex flex-wrap justify-center gap-4"&gt;
-&lt;a href="#" title="facebook" target="blank" class="h-10 w-10 flex items-center border  rounded-full bg-gray-white text-blue-500 hover:border-blue-200 hover:text-blue-600 focus:bg-blue-100 focus:outline-none transition"&gt;
-    &lt;svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="m-auto" viewBox="0 0 16 16"&gt;
-    &lt;path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" /&gt;
-    &lt;/svg&gt;
-&lt;/a&gt;
-&lt;a href="#" title="youtube" target="blank" class="h-10 w-10 flex items-center border  rounded-full bg-gray-white text-red-500 hover:border-red-200 hover:text-red-600 focus:bg-red-100 focus:outline-none transition"&gt;
-    &lt;svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="m-auto" viewBox="0 0 16 16"&gt;
-    &lt;path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z" /&gt;
-    &lt;/svg&gt;
-&lt;/a&gt;
-&lt;a href="#" title="twitter" target="blank" class="h-10 w-10 flex items-center border  rounded-full bg-gray-white text-sky-500 hover:border-sky-200 hover:text-sky-500 focus:bg-cyan-100 focus:outline-none transition"&gt;
-    &lt;svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="m-auto" viewBox="0 0 16 16"&gt;
-    &lt;path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" /&gt;
-    &lt;/svg&gt;
-&lt;/a&gt;
-&lt;/div&gt;
-
-&lt;div class="flex flex-wrap justify-center gap-4"&gt;
-&lt;a href="#" title="facebook" target="blank" class="h-10 w-10 flex items-center rounded-full bg-blue-50 text-blue-500 hover:bg-blue-100 hover:text-blue-600 focus:bg-blue-100 focus:outline-none transition"&gt;
-    &lt;svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="m-auto" viewBox="0 0 16 16"&gt;
-    &lt;path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" /&gt;
-    &lt;/svg&gt;
-&lt;/a&gt;
-&lt;a href="#" title="youtube" target="blank" class="h-10 w-10 flex items-center rounded-full bg-red-50 text-red-500 hover:bg-red-100 hover:text-red-600 focus:bg-red-100 focus:outline-none transition"&gt;
-    &lt;svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="m-auto" viewBox="0 0 16 16"&gt;
-    &lt;path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z" /&gt;
-    &lt;/svg&gt;
-&lt;/a&gt;
-&lt;a href="#" title="twitter" target="blank" class="h-10 w-10 flex items-center rounded-full bg-sky-50 text-sky-500 hover:bg-cyan-100 hover:text-sky-600 focus:bg-sky-100 focus:outline-none transition"&gt;
-    &lt;svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="m-auto" viewBox="0 0 16 16"&gt;
-    &lt;path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" /&gt;
-    &lt;/svg&gt;
-&lt;/a&gt;
-&lt;/div&gt;
-
-&lt;div class="flex flex-wrap justify-center gap-4"&gt;
-&lt;a href="#" title="facebook" target="blank" class="h-10 w-10 flex items-center rounded-full bg-blue-500 text-white hover:bg-blue-600 focus:bg-blue-700 focus:outline-none transition"&gt;
-    &lt;svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="m-auto" viewBox="0 0 16 16"&gt;
-    &lt;path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" /&gt;
-    &lt;/svg&gt;
-&lt;/a&gt;
-&lt;a href="#" title="youtube" target="blank" class="h-10 w-10 flex items-center rounded-full bg-red-500 text-white hover:bg-red-600 focus:bg-red-700 focus:outline-none transition"&gt;
-    &lt;svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="m-auto" viewBox="0 0 16 16"&gt;
-    &lt;path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z" /&gt;
-    &lt;/svg&gt;
-&lt;/a&gt;
-&lt;a href="#" title="twitter" target="blank" class="h-10 w-10 flex items-center rounded-full bg-sky-500 text-white hover:bg-sky-600 focus:bg-sky-700 focus:outline-none transition"&gt;
-    &lt;svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="m-auto" viewBox="0 0 16 16"&gt;
-    &lt;path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" /&gt;
-    &lt;/svg&gt;
-&lt;/a&gt;
-&lt;/div&gt;
-</code> 
-                                                </pre>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div> 
-
-                            <div>
-                                <div class=" relative md:flex flex-wrap items-end justify-between">
-                                    <h2 class="text-xl text-blueGray-700">Full rounded avatars</h2>
-                                    <div class="z-20 top-2 md:mt-0 mt-4 flex items-center justify-between divide-x divide-gray-100 gap-4">
-                                        <nav class="tab-head p-1 rounded-md bg-gray-100 bg-opacity-60 hover:bg-opacity-80  text-sm relative transition duration-300">
-                                            <div class="flex relative z-20 text-gray-500">
-                                                <button data-target="preview"  class="tab-item md:px-3 px-1.5 py-1.5 hover:text-cyan-9  00 focus:outline-none flex gap-1">
-                                                    <svg fill="none" class="stroke-current w-5 h-5">
-                                                        <path d="M17.25 10c0 1-1.75 6.25-7.25 6.25S2.75 11 2.75 10 4.5 3.75 10 3.75 17.25 9 17.25 10z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                        <circle cx="10" cy="10" r="2.25" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></circle>
-                                                    </svg>
-                                                    <span class="md:block hidden">Preview</span>
-                                                </button>
-                                                <button data-target="code" class="tab-item md:px-3 px-1.5 py-1.5 hover:text-cyan-900 rounded-md focus:outline-none flex gap-1 transition">
-                                                    <svg fill="none" class="stroke-current w-5 h-5" >
-                                                        <path d="M13.75 6.75l3.5 3.25-3.5 3.25M6.25 13.25L2.75 10l3.5-3.25" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                    </svg>
-                                                    <span class="md:block hidden">Code</span>
-                                                </button>
-                                            </div>
-                                            <div class="tab-indicator absolute top-1 z-10 bg-white shadow hover:bg-cyan-600 rounded-md md:px-3 px-1.5 py-1.5 duration-100"></div>
-                                        </nav>
-                                        <div class="pl-2">
-                                            <button class="text-sm text-gray-600 p-2 bg-cyan-200 bg-opacity-0 hover:text-cyan-700 hover:bg-opacity-20 active:bg-opacity-40 rounded-md focus:outline-none">
-                                                <svg class="w-5 h-5" viewBox="0 0 24 24">
-                                                    <path fill="currentColor" d="M19,3H14.82C14.25,1.44 12.53,0.64 11,1.2C10.14,1.5 9.5,2.16 9.18,3H5A2,2 0 0,0 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5A2,2 0 0,0 19,3M12,3A1,1 0 0,1 13,4A1,1 0 0,1 12,5A1,1 0 0,1 11,4A1,1 0 0,1 12,3M7,7H17V5H19V19H5V5H7V7M17,11H7V9H17V11M15,15H7V13H15V15Z" />
-                                                </svg>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                                <div id="fullRoundedAvatar" class="my-8 component-container">    
-                                    <div>
-                                        <div class="relative">
-                                            <div data-name="preview" class="bg-white rounded-2xl visible transform translate-y-0 opacity-100 tab-content w-full md:p-8 p-4 transtion duration-500 ease-in-out">
-                                                <div class="flex flex-wrap lg:justify-center lg:gap-16 md:gap-8 gap-4">
-                                                    <div class="flex flex-wrap justify-center gap-4">
-                                                        <a href="#" title="facebook" target="blank" class="h-10 w-10 flex items-center rounded-full bg-white text-gray-500  hover:text-blue-500 focus:bg-blue-100 focus:outline-none transition">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="m-auto" viewBox="0 0 16 16">
-                                                            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                                                <div class="absolute right-2 pt-0.5 w-max ml-auto">
+                                                    <button class="inline-flex gap-1.5 text-sm text-gray-800 p-2 px-3 bg-cyan-300 hover:bg-cyan-400 active:bg-cyan-500 rounded-md focus:outline-none">
+                                                        <svg class="w-5 h-5" viewBox="0 0 24 24">
+                                                            <path fill="currentColor" d="M19,3H14.82C14.25,1.44 12.53,0.64 11,1.2C10.14,1.5 9.5,2.16 9.18,3H5A2,2 0 0,0 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5A2,2 0 0,0 19,3M12,3A1,1 0 0,1 13,4A1,1 0 0,1 12,5A1,1 0 0,1 11,4A1,1 0 0,1 12,3M7,7H17V5H19V19H5V5H7V7M17,11H7V9H17V11M15,15H7V13H15V15Z" />
                                                         </svg>
-                                                        </a>
-                                                
-                                                        <a href="#" title="youtube" target="blank" class="h-10 w-10 flex items-center rounded-full bg-white text-gray-500 hover:text-red-500 focus:bg-red-100 focus:outline-none transition">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="m-auto" viewBox="0 0 16 16">
-                                                            <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z" />
-                                                        </svg>
-                                                        </a>
-                                                
-                                                        <a href="#" title="twitter" target="blank" class="h-10 w-10 flex items-center rounded-full bg-white text-gray-500 hover:text-sky-500 focus:bg-sky-100 focus:outline-none transition">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="m-auto" viewBox="0 0 16 16">
-                                                            <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
-                                                        </svg>
-                                                        </a>
-                                                    </div>
-                                                
-                                                    <div class="flex flex-wrap justify-center gap-4">
-                                                        <a href="#" title="facebook" target="blank" class="h-10 w-10 flex items-center border  rounded-full bg-gray-white text-blue-500 hover:border-blue-200 hover:text-blue-600 focus:bg-blue-100 focus:outline-none transition">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="m-auto" viewBox="0 0 16 16">
-                                                            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
-                                                        </svg>
-                                                        </a>
-                                                
-                                                        <a href="#" title="youtube" target="blank" class="h-10 w-10 flex items-center border  rounded-full bg-gray-white text-red-500 hover:border-red-200 hover:text-red-600 focus:bg-red-100 focus:outline-none transition">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="m-auto" viewBox="0 0 16 16">
-                                                            <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z" />
-                                                        </svg>
-                                                        </a>
-                                                
-                                                        <a href="#" title="twitter" target="blank" class="h-10 w-10 flex items-center border  rounded-full bg-gray-white text-sky-500 hover:border-sky-200 hover:text-sky-500 focus:bg-cyan-100 focus:outline-none transition">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="m-auto" viewBox="0 0 16 16">
-                                                            <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
-                                                        </svg>
-                                                        </a>
-                                                    </div>
-                                                
-                                                    <div class="flex flex-wrap justify-center gap-4">
-                                                        <a href="#" title="facebook" target="blank" class="h-10 w-10 flex items-center rounded-full bg-blue-50 text-blue-500 hover:bg-blue-100 hover:text-blue-600 focus:bg-blue-100 focus:outline-none transition">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="m-auto" viewBox="0 0 16 16">
-                                                            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
-                                                        </svg>
-                                                        </a>
-                                                
-                                                        <a href="#" title="youtube" target="blank" class="h-10 w-10 flex items-center rounded-full bg-red-50 text-red-500 hover:bg-red-100 hover:text-red-600 focus:bg-red-100 focus:outline-none transition">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="m-auto" viewBox="0 0 16 16">
-                                                            <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z" />
-                                                        </svg>
-                                                        </a>
-                                                
-                                                        <a href="#" title="twitter" target="blank" class="h-10 w-10 flex items-center rounded-full bg-sky-50 text-sky-500 hover:bg-cyan-100 hover:text-sky-600 focus:bg-sky-100 focus:outline-none transition">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="m-auto" viewBox="0 0 16 16">
-                                                            <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
-                                                        </svg>
-                                                        </a>
-                                                    </div>
-                                                
-                                                    <div class="flex flex-wrap justify-center gap-4">
-                                                        <a href="#" title="facebook" target="blank" class="h-10 w-10 flex items-center rounded-full bg-blue-500 text-white hover:bg-blue-600 focus:bg-blue-700 focus:outline-none transition">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="m-auto" viewBox="0 0 16 16">
-                                                            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
-                                                        </svg>
-                                                        </a>
-                                                
-                                                        <a href="#" title="youtube" target="blank" class="h-10 w-10 flex items-center rounded-full bg-red-500 text-white hover:bg-red-600 focus:bg-red-700 focus:outline-none transition">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="m-auto" viewBox="0 0 16 16">
-                                                            <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z" />
-                                                        </svg>
-                                                        </a>
-                                                
-                                                        <a href="#" title="twitter" target="blank" class="h-10 w-10 flex items-center rounded-full bg-sky-500 text-white hover:bg-sky-600 focus:bg-sky-700 focus:outline-none transition">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="m-auto" viewBox="0 0 16 16">
-                                                            <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
-                                                        </svg>
-                                                        </a>
-                                                    </div>
+                                                        <span>Copy</span>
+                                                    </button>
                                                 </div>
-                                            </div>
-                                            <div data-name="code" class="tab-content absolute top-0 w-full bg-gray-800 rounded-2xl invisible text-sm transform -translate-y-10 opacity-0 p-2 transition duration-500 ease-in-out" >
-                                                <pre class="overflow-auto scrollbar-black rounded-xl language-markup hightlight" style="height:65vh;">
-<code>
-&lt;div class="flex flex-wrap justify-center gap-4"&gt;
-&lt;a href="#" title="facebook" target="blank" class="h-10 w-10 flex items-center rounded-full bg-white text-gray-500  hover:text-blue-500 focus:bg-blue-100 focus:outline-none transition"&gt;
-    &lt;svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="m-auto" viewBox="0 0 16 16"&gt;
-    &lt;path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" /&gt;
-    &lt;/svg&gt;
-&lt;/a&gt;
-&lt;a href="#" title="youtube" target="blank" class="h-10 w-10 flex items-center rounded-full bg-white text-gray-500 hover:text-red-500 focus:bg-red-100 focus:outline-none transition"&gt;
-    &lt;svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="m-auto" viewBox="0 0 16 16"&gt;
-    &lt;path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z" /&gt;
-    &lt;/svg&gt;
-&lt;/a&gt;
-&lt;a href="#" title="twitter" target="blank" class="h-10 w-10 flex items-center rounded-full bg-white text-gray-500 hover:text-sky-500 focus:bg-sky-100 focus:outline-none transition"&gt;
-    &lt;svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="m-auto" viewBox="0 0 16 16"&gt;
-    &lt;path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" /&gt;
-    &lt;/svg&gt;
-&lt;/a&gt;
-&lt;/div&gt;
-
-&lt;div class="flex flex-wrap justify-center gap-4"&gt;
-&lt;a href="#" title="facebook" target="blank" class="h-10 w-10 flex items-center border  rounded-full bg-gray-white text-blue-500 hover:border-blue-200 hover:text-blue-600 focus:bg-blue-100 focus:outline-none transition"&gt;
-    &lt;svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="m-auto" viewBox="0 0 16 16"&gt;
-    &lt;path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" /&gt;
-    &lt;/svg&gt;
-&lt;/a&gt;
-&lt;a href="#" title="youtube" target="blank" class="h-10 w-10 flex items-center border  rounded-full bg-gray-white text-red-500 hover:border-red-200 hover:text-red-600 focus:bg-red-100 focus:outline-none transition"&gt;
-    &lt;svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="m-auto" viewBox="0 0 16 16"&gt;
-    &lt;path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z" /&gt;
-    &lt;/svg&gt;
-&lt;/a&gt;
-&lt;a href="#" title="twitter" target="blank" class="h-10 w-10 flex items-center border  rounded-full bg-gray-white text-sky-500 hover:border-sky-200 hover:text-sky-500 focus:bg-cyan-100 focus:outline-none transition"&gt;
-    &lt;svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="m-auto" viewBox="0 0 16 16"&gt;
-    &lt;path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" /&gt;
-    &lt;/svg&gt;
-&lt;/a&gt;
-&lt;/div&gt;
-
-&lt;div class="flex flex-wrap justify-center gap-4"&gt;
-&lt;a href="#" title="facebook" target="blank" class="h-10 w-10 flex items-center rounded-full bg-blue-50 text-blue-500 hover:bg-blue-100 hover:text-blue-600 focus:bg-blue-100 focus:outline-none transition"&gt;
-    &lt;svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="m-auto" viewBox="0 0 16 16"&gt;
-    &lt;path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" /&gt;
-    &lt;/svg&gt;
-&lt;/a&gt;
-&lt;a href="#" title="youtube" target="blank" class="h-10 w-10 flex items-center rounded-full bg-red-50 text-red-500 hover:bg-red-100 hover:text-red-600 focus:bg-red-100 focus:outline-none transition"&gt;
-    &lt;svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="m-auto" viewBox="0 0 16 16"&gt;
-    &lt;path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z" /&gt;
-    &lt;/svg&gt;
-&lt;/a&gt;
-&lt;a href="#" title="twitter" target="blank" class="h-10 w-10 flex items-center rounded-full bg-sky-50 text-sky-500 hover:bg-cyan-100 hover:text-sky-600 focus:bg-sky-100 focus:outline-none transition"&gt;
-    &lt;svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="m-auto" viewBox="0 0 16 16"&gt;
-    &lt;path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" /&gt;
-    &lt;/svg&gt;
-&lt;/a&gt;
-&lt;/div&gt;
-
-&lt;div class="flex flex-wrap justify-center gap-4"&gt;
-&lt;a href="#" title="facebook" target="blank" class="h-10 w-10 flex items-center rounded-full bg-blue-500 text-white hover:bg-blue-600 focus:bg-blue-700 focus:outline-none transition"&gt;
-    &lt;svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="m-auto" viewBox="0 0 16 16"&gt;
-    &lt;path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" /&gt;
-    &lt;/svg&gt;
-&lt;/a&gt;
-&lt;a href="#" title="youtube" target="blank" class="h-10 w-10 flex items-center rounded-full bg-red-500 text-white hover:bg-red-600 focus:bg-red-700 focus:outline-none transition"&gt;
-    &lt;svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="m-auto" viewBox="0 0 16 16"&gt;
-    &lt;path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z" /&gt;
-    &lt;/svg&gt;
-&lt;/a&gt;
-&lt;a href="#" title="twitter" target="blank" class="h-10 w-10 flex items-center rounded-full bg-sky-500 text-white hover:bg-sky-600 focus:bg-sky-700 focus:outline-none transition"&gt;
-    &lt;svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="m-auto" viewBox="0 0 16 16"&gt;
-    &lt;path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" /&gt;
-    &lt;/svg&gt;
-&lt;/a&gt;
-&lt;/div&gt;
-</code> 
-                                                </pre>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div> 
-
-                            <div>
-                                <div class=" relative md:flex flex-wrap items-end justify-between">
-                                    <h2 class="text-xl text-blueGray-700">Full rounded avatars</h2>
-                                    <div class="z-20 top-2 md:mt-0 mt-4 flex items-center justify-between divide-x divide-gray-100 gap-4">
-                                        <nav class="tab-head p-1 rounded-md bg-gray-100 bg-opacity-60 hover:bg-opacity-80  text-sm relative transition duration-300">
-                                            <div class="flex relative z-20 text-gray-500">
-                                                <button data-target="preview"  class="tab-item md:px-3 px-1.5 py-1.5 hover:text-cyan-9  00 focus:outline-none flex gap-1">
-                                                    <svg fill="none" class="stroke-current w-5 h-5">
-                                                        <path d="M17.25 10c0 1-1.75 6.25-7.25 6.25S2.75 11 2.75 10 4.5 3.75 10 3.75 17.25 9 17.25 10z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                        <circle cx="10" cy="10" r="2.25" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></circle>
-                                                    </svg>
-                                                    <span class="md:block hidden">Preview</span>
-                                                </button>
-                                                <button data-target="code" class="tab-item md:px-3 px-1.5 py-1.5 hover:text-cyan-900 rounded-md focus:outline-none flex gap-1 transition">
-                                                    <svg fill="none" class="stroke-current w-5 h-5" >
-                                                        <path d="M13.75 6.75l3.5 3.25-3.5 3.25M6.25 13.25L2.75 10l3.5-3.25" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                    </svg>
-                                                    <span class="md:block hidden">Code</span>
-                                                </button>
-                                            </div>
-                                            <div class="tab-indicator absolute top-1 z-10 bg-white shadow hover:bg-cyan-600 rounded-md md:px-3 px-1.5 py-1.5 duration-100"></div>
-                                        </nav>
-                                        <div class="pl-2">
-                                            <button class="text-sm text-gray-600 p-2 bg-cyan-200 bg-opacity-0 hover:text-cyan-700 hover:bg-opacity-20 active:bg-opacity-40 rounded-md focus:outline-none">
-                                                <svg class="w-5 h-5" viewBox="0 0 24 24">
-                                                    <path fill="currentColor" d="M19,3H14.82C14.25,1.44 12.53,0.64 11,1.2C10.14,1.5 9.5,2.16 9.18,3H5A2,2 0 0,0 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5A2,2 0 0,0 19,3M12,3A1,1 0 0,1 13,4A1,1 0 0,1 12,5A1,1 0 0,1 11,4A1,1 0 0,1 12,3M7,7H17V5H19V19H5V5H7V7M17,11H7V9H17V11M15,15H7V13H15V15Z" />
-                                                </svg>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                                <div id="fullRoundedAvatar" class="my-8 component-container">    
-                                    <div>
-                                        <div class="relative">
-                                            <div data-name="preview" class="bg-white rounded-2xl visible transform translate-y-0 opacity-100 tab-content w-full md:p-8 p-4 transtion duration-500 ease-in-out">
-                                                <div class="flex flex-wrap lg:justify-center lg:gap-16 md:gap-8 gap-4">
-                                                    <div class="flex flex-wrap justify-center gap-4">
-                                                        <a href="#" title="facebook" target="blank" class="h-10 w-10 flex items-center rounded-full bg-white text-gray-500  hover:text-blue-500 focus:bg-blue-100 focus:outline-none transition">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="m-auto" viewBox="0 0 16 16">
-                                                            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
-                                                        </svg>
-                                                        </a>
-                                                
-                                                        <a href="#" title="youtube" target="blank" class="h-10 w-10 flex items-center rounded-full bg-white text-gray-500 hover:text-red-500 focus:bg-red-100 focus:outline-none transition">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="m-auto" viewBox="0 0 16 16">
-                                                            <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z" />
-                                                        </svg>
-                                                        </a>
-                                                
-                                                        <a href="#" title="twitter" target="blank" class="h-10 w-10 flex items-center rounded-full bg-white text-gray-500 hover:text-sky-500 focus:bg-sky-100 focus:outline-none transition">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="m-auto" viewBox="0 0 16 16">
-                                                            <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
-                                                        </svg>
-                                                        </a>
-                                                    </div>
-                                                
-                                                    <div class="flex flex-wrap justify-center gap-4">
-                                                        <a href="#" title="facebook" target="blank" class="h-10 w-10 flex items-center border  rounded-full bg-gray-white text-blue-500 hover:border-blue-200 hover:text-blue-600 focus:bg-blue-100 focus:outline-none transition">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="m-auto" viewBox="0 0 16 16">
-                                                            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
-                                                        </svg>
-                                                        </a>
-                                                
-                                                        <a href="#" title="youtube" target="blank" class="h-10 w-10 flex items-center border  rounded-full bg-gray-white text-red-500 hover:border-red-200 hover:text-red-600 focus:bg-red-100 focus:outline-none transition">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="m-auto" viewBox="0 0 16 16">
-                                                            <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z" />
-                                                        </svg>
-                                                        </a>
-                                                
-                                                        <a href="#" title="twitter" target="blank" class="h-10 w-10 flex items-center border  rounded-full bg-gray-white text-sky-500 hover:border-sky-200 hover:text-sky-500 focus:bg-cyan-100 focus:outline-none transition">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="m-auto" viewBox="0 0 16 16">
-                                                            <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
-                                                        </svg>
-                                                        </a>
-                                                    </div>
-                                                
-                                                    <div class="flex flex-wrap justify-center gap-4">
-                                                        <a href="#" title="facebook" target="blank" class="h-10 w-10 flex items-center rounded-full bg-blue-50 text-blue-500 hover:bg-blue-100 hover:text-blue-600 focus:bg-blue-100 focus:outline-none transition">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="m-auto" viewBox="0 0 16 16">
-                                                            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
-                                                        </svg>
-                                                        </a>
-                                                
-                                                        <a href="#" title="youtube" target="blank" class="h-10 w-10 flex items-center rounded-full bg-red-50 text-red-500 hover:bg-red-100 hover:text-red-600 focus:bg-red-100 focus:outline-none transition">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="m-auto" viewBox="0 0 16 16">
-                                                            <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z" />
-                                                        </svg>
-                                                        </a>
-                                                
-                                                        <a href="#" title="twitter" target="blank" class="h-10 w-10 flex items-center rounded-full bg-sky-50 text-sky-500 hover:bg-cyan-100 hover:text-sky-600 focus:bg-sky-100 focus:outline-none transition">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="m-auto" viewBox="0 0 16 16">
-                                                            <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
-                                                        </svg>
-                                                        </a>
-                                                    </div>
-                                                
-                                                    <div class="flex flex-wrap justify-center gap-4">
-                                                        <a href="#" title="facebook" target="blank" class="h-10 w-10 flex items-center rounded-full bg-blue-500 text-white hover:bg-blue-600 focus:bg-blue-700 focus:outline-none transition">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="m-auto" viewBox="0 0 16 16">
-                                                            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
-                                                        </svg>
-                                                        </a>
-                                                
-                                                        <a href="#" title="youtube" target="blank" class="h-10 w-10 flex items-center rounded-full bg-red-500 text-white hover:bg-red-600 focus:bg-red-700 focus:outline-none transition">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="m-auto" viewBox="0 0 16 16">
-                                                            <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z" />
-                                                        </svg>
-                                                        </a>
-                                                
-                                                        <a href="#" title="twitter" target="blank" class="h-10 w-10 flex items-center rounded-full bg-sky-500 text-white hover:bg-sky-600 focus:bg-sky-700 focus:outline-none transition">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="m-auto" viewBox="0 0 16 16">
-                                                            <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
-                                                        </svg>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div data-name="code" class="tab-content absolute top-0 w-full bg-gray-800 rounded-2xl invisible text-sm transform -translate-y-10 opacity-0 p-2 transition duration-500 ease-in-out" >
-                                                <pre class="overflow-auto scrollbar-black rounded-xl language-markup hightlight" style="height:65vh;">
-<code>
-&lt;div class="flex flex-wrap justify-center gap-4"&gt;
-&lt;a href="#" title="facebook" target="blank" class="h-10 w-10 flex items-center rounded-full bg-white text-gray-500  hover:text-blue-500 focus:bg-blue-100 focus:outline-none transition"&gt;
-    &lt;svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="m-auto" viewBox="0 0 16 16"&gt;
-    &lt;path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" /&gt;
-    &lt;/svg&gt;
-&lt;/a&gt;
-&lt;a href="#" title="youtube" target="blank" class="h-10 w-10 flex items-center rounded-full bg-white text-gray-500 hover:text-red-500 focus:bg-red-100 focus:outline-none transition"&gt;
-    &lt;svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="m-auto" viewBox="0 0 16 16"&gt;
-    &lt;path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z" /&gt;
-    &lt;/svg&gt;
-&lt;/a&gt;
-&lt;a href="#" title="twitter" target="blank" class="h-10 w-10 flex items-center rounded-full bg-white text-gray-500 hover:text-sky-500 focus:bg-sky-100 focus:outline-none transition"&gt;
-    &lt;svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="m-auto" viewBox="0 0 16 16"&gt;
-    &lt;path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" /&gt;
-    &lt;/svg&gt;
-&lt;/a&gt;
-&lt;/div&gt;
-
-&lt;div class="flex flex-wrap justify-center gap-4"&gt;
-&lt;a href="#" title="facebook" target="blank" class="h-10 w-10 flex items-center border  rounded-full bg-gray-white text-blue-500 hover:border-blue-200 hover:text-blue-600 focus:bg-blue-100 focus:outline-none transition"&gt;
-    &lt;svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="m-auto" viewBox="0 0 16 16"&gt;
-    &lt;path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" /&gt;
-    &lt;/svg&gt;
-&lt;/a&gt;
-&lt;a href="#" title="youtube" target="blank" class="h-10 w-10 flex items-center border  rounded-full bg-gray-white text-red-500 hover:border-red-200 hover:text-red-600 focus:bg-red-100 focus:outline-none transition"&gt;
-    &lt;svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="m-auto" viewBox="0 0 16 16"&gt;
-    &lt;path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z" /&gt;
-    &lt;/svg&gt;
-&lt;/a&gt;
-&lt;a href="#" title="twitter" target="blank" class="h-10 w-10 flex items-center border  rounded-full bg-gray-white text-sky-500 hover:border-sky-200 hover:text-sky-500 focus:bg-cyan-100 focus:outline-none transition"&gt;
-    &lt;svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="m-auto" viewBox="0 0 16 16"&gt;
-    &lt;path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" /&gt;
-    &lt;/svg&gt;
-&lt;/a&gt;
-&lt;/div&gt;
-
-&lt;div class="flex flex-wrap justify-center gap-4"&gt;
-&lt;a href="#" title="facebook" target="blank" class="h-10 w-10 flex items-center rounded-full bg-blue-50 text-blue-500 hover:bg-blue-100 hover:text-blue-600 focus:bg-blue-100 focus:outline-none transition"&gt;
-    &lt;svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="m-auto" viewBox="0 0 16 16"&gt;
-    &lt;path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" /&gt;
-    &lt;/svg&gt;
-&lt;/a&gt;
-&lt;a href="#" title="youtube" target="blank" class="h-10 w-10 flex items-center rounded-full bg-red-50 text-red-500 hover:bg-red-100 hover:text-red-600 focus:bg-red-100 focus:outline-none transition"&gt;
-    &lt;svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="m-auto" viewBox="0 0 16 16"&gt;
-    &lt;path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z" /&gt;
-    &lt;/svg&gt;
-&lt;/a&gt;
-&lt;a href="#" title="twitter" target="blank" class="h-10 w-10 flex items-center rounded-full bg-sky-50 text-sky-500 hover:bg-cyan-100 hover:text-sky-600 focus:bg-sky-100 focus:outline-none transition"&gt;
-    &lt;svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="m-auto" viewBox="0 0 16 16"&gt;
-    &lt;path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" /&gt;
-    &lt;/svg&gt;
-&lt;/a&gt;
-&lt;/div&gt;
-
-&lt;div class="flex flex-wrap justify-center gap-4"&gt;
-&lt;a href="#" title="facebook" target="blank" class="h-10 w-10 flex items-center rounded-full bg-blue-500 text-white hover:bg-blue-600 focus:bg-blue-700 focus:outline-none transition"&gt;
-    &lt;svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="m-auto" viewBox="0 0 16 16"&gt;
-    &lt;path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" /&gt;
-    &lt;/svg&gt;
-&lt;/a&gt;
-&lt;a href="#" title="youtube" target="blank" class="h-10 w-10 flex items-center rounded-full bg-red-500 text-white hover:bg-red-600 focus:bg-red-700 focus:outline-none transition"&gt;
-    &lt;svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="m-auto" viewBox="0 0 16 16"&gt;
-    &lt;path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z" /&gt;
-    &lt;/svg&gt;
-&lt;/a&gt;
-&lt;a href="#" title="twitter" target="blank" class="h-10 w-10 flex items-center rounded-full bg-sky-500 text-white hover:bg-sky-600 focus:bg-sky-700 focus:outline-none transition"&gt;
-    &lt;svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="m-auto" viewBox="0 0 16 16"&gt;
-    &lt;path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" /&gt;
-    &lt;/svg&gt;
-&lt;/a&gt;
-&lt;/div&gt;
-</code> 
-                                                </pre>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div> 
-
-                            <div>
-                                <div class=" relative md:flex flex-wrap items-end justify-between">
-                                    <h2 class="text-xl text-blueGray-700">Full rounded avatars</h2>
-                                    <div class="z-20 top-2 md:mt-0 mt-4 flex items-center justify-between divide-x divide-gray-100 gap-4">
-                                        <nav class="tab-head p-1 rounded-md bg-gray-100 bg-opacity-60 hover:bg-opacity-80  text-sm relative transition duration-300">
-                                            <div class="flex relative z-20 text-gray-500">
-                                                <button data-target="preview"  class="tab-item md:px-3 px-1.5 py-1.5 hover:text-cyan-9  00 focus:outline-none flex gap-1">
-                                                    <svg fill="none" class="stroke-current w-5 h-5">
-                                                        <path d="M17.25 10c0 1-1.75 6.25-7.25 6.25S2.75 11 2.75 10 4.5 3.75 10 3.75 17.25 9 17.25 10z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                        <circle cx="10" cy="10" r="2.25" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></circle>
-                                                    </svg>
-                                                    <span class="md:block hidden">Preview</span>
-                                                </button>
-                                                <button data-target="code" class="tab-item md:px-3 px-1.5 py-1.5 hover:text-cyan-900 rounded-md focus:outline-none flex gap-1 transition">
-                                                    <svg fill="none" class="stroke-current w-5 h-5" >
-                                                        <path d="M13.75 6.75l3.5 3.25-3.5 3.25M6.25 13.25L2.75 10l3.5-3.25" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                    </svg>
-                                                    <span class="md:block hidden">Code</span>
-                                                </button>
-                                            </div>
-                                            <div class="tab-indicator absolute top-1 z-10 bg-white shadow hover:bg-cyan-600 rounded-md md:px-3 px-1.5 py-1.5 duration-100"></div>
-                                        </nav>
-                                        <div class="pl-2">
-                                            <button class="text-sm text-gray-600 p-2 bg-cyan-200 bg-opacity-0 hover:text-cyan-700 hover:bg-opacity-20 active:bg-opacity-40 rounded-md focus:outline-none">
-                                                <svg class="w-5 h-5" viewBox="0 0 24 24">
-                                                    <path fill="currentColor" d="M19,3H14.82C14.25,1.44 12.53,0.64 11,1.2C10.14,1.5 9.5,2.16 9.18,3H5A2,2 0 0,0 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5A2,2 0 0,0 19,3M12,3A1,1 0 0,1 13,4A1,1 0 0,1 12,5A1,1 0 0,1 11,4A1,1 0 0,1 12,3M7,7H17V5H19V19H5V5H7V7M17,11H7V9H17V11M15,15H7V13H15V15Z" />
-                                                </svg>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                                <div id="fullRoundedAvatar" class="my-8 component-container">    
-                                    <div>
-                                        <div class="relative">
-                                            <div data-name="preview" class="bg-white rounded-2xl visible transform translate-y-0 opacity-100 tab-content w-full md:p-8 p-4 transtion duration-500 ease-in-out">
-                                                <div class="flex flex-wrap lg:justify-center lg:gap-16 md:gap-8 gap-4">
-                                                    <div class="flex flex-wrap justify-center gap-4">
-                                                        <a href="#" title="facebook" target="blank" class="h-10 w-10 flex items-center rounded-full bg-white text-gray-500  hover:text-blue-500 focus:bg-blue-100 focus:outline-none transition">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="m-auto" viewBox="0 0 16 16">
-                                                            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
-                                                        </svg>
-                                                        </a>
-                                                
-                                                        <a href="#" title="youtube" target="blank" class="h-10 w-10 flex items-center rounded-full bg-white text-gray-500 hover:text-red-500 focus:bg-red-100 focus:outline-none transition">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="m-auto" viewBox="0 0 16 16">
-                                                            <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z" />
-                                                        </svg>
-                                                        </a>
-                                                
-                                                        <a href="#" title="twitter" target="blank" class="h-10 w-10 flex items-center rounded-full bg-white text-gray-500 hover:text-sky-500 focus:bg-sky-100 focus:outline-none transition">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="m-auto" viewBox="0 0 16 16">
-                                                            <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
-                                                        </svg>
-                                                        </a>
-                                                    </div>
-                                                
-                                                    <div class="flex flex-wrap justify-center gap-4">
-                                                        <a href="#" title="facebook" target="blank" class="h-10 w-10 flex items-center border  rounded-full bg-gray-white text-blue-500 hover:border-blue-200 hover:text-blue-600 focus:bg-blue-100 focus:outline-none transition">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="m-auto" viewBox="0 0 16 16">
-                                                            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
-                                                        </svg>
-                                                        </a>
-                                                
-                                                        <a href="#" title="youtube" target="blank" class="h-10 w-10 flex items-center border  rounded-full bg-gray-white text-red-500 hover:border-red-200 hover:text-red-600 focus:bg-red-100 focus:outline-none transition">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="m-auto" viewBox="0 0 16 16">
-                                                            <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z" />
-                                                        </svg>
-                                                        </a>
-                                                
-                                                        <a href="#" title="twitter" target="blank" class="h-10 w-10 flex items-center border  rounded-full bg-gray-white text-sky-500 hover:border-sky-200 hover:text-sky-500 focus:bg-cyan-100 focus:outline-none transition">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="m-auto" viewBox="0 0 16 16">
-                                                            <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
-                                                        </svg>
-                                                        </a>
-                                                    </div>
-                                                
-                                                    <div class="flex flex-wrap justify-center gap-4">
-                                                        <a href="#" title="facebook" target="blank" class="h-10 w-10 flex items-center rounded-full bg-blue-50 text-blue-500 hover:bg-blue-100 hover:text-blue-600 focus:bg-blue-100 focus:outline-none transition">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="m-auto" viewBox="0 0 16 16">
-                                                            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
-                                                        </svg>
-                                                        </a>
-                                                
-                                                        <a href="#" title="youtube" target="blank" class="h-10 w-10 flex items-center rounded-full bg-red-50 text-red-500 hover:bg-red-100 hover:text-red-600 focus:bg-red-100 focus:outline-none transition">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="m-auto" viewBox="0 0 16 16">
-                                                            <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z" />
-                                                        </svg>
-                                                        </a>
-                                                
-                                                        <a href="#" title="twitter" target="blank" class="h-10 w-10 flex items-center rounded-full bg-sky-50 text-sky-500 hover:bg-cyan-100 hover:text-sky-600 focus:bg-sky-100 focus:outline-none transition">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="m-auto" viewBox="0 0 16 16">
-                                                            <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
-                                                        </svg>
-                                                        </a>
-                                                    </div>
-                                                
-                                                    <div class="flex flex-wrap justify-center gap-4">
-                                                        <a href="#" title="facebook" target="blank" class="h-10 w-10 flex items-center rounded-full bg-blue-500 text-white hover:bg-blue-600 focus:bg-blue-700 focus:outline-none transition">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="m-auto" viewBox="0 0 16 16">
-                                                            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
-                                                        </svg>
-                                                        </a>
-                                                
-                                                        <a href="#" title="youtube" target="blank" class="h-10 w-10 flex items-center rounded-full bg-red-500 text-white hover:bg-red-600 focus:bg-red-700 focus:outline-none transition">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="m-auto" viewBox="0 0 16 16">
-                                                            <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z" />
-                                                        </svg>
-                                                        </a>
-                                                
-                                                        <a href="#" title="twitter" target="blank" class="h-10 w-10 flex items-center rounded-full bg-sky-500 text-white hover:bg-sky-600 focus:bg-sky-700 focus:outline-none transition">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="m-auto" viewBox="0 0 16 16">
-                                                            <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
-                                                        </svg>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div data-name="code" class="tab-content absolute top-0 w-full bg-gray-800 rounded-2xl invisible text-sm transform -translate-y-10 opacity-0 p-2 transition duration-500 ease-in-out" >
-                                                <pre class="overflow-auto scrollbar-black rounded-xl language-markup hightlight" style="height:65vh;">
-<code>
-&lt;div class="flex flex-wrap justify-center gap-4"&gt;
-&lt;a href="#" title="facebook" target="blank" class="h-10 w-10 flex items-center rounded-full bg-white text-gray-500  hover:text-blue-500 focus:bg-blue-100 focus:outline-none transition"&gt;
-    &lt;svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="m-auto" viewBox="0 0 16 16"&gt;
-    &lt;path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" /&gt;
-    &lt;/svg&gt;
-&lt;/a&gt;
-&lt;a href="#" title="youtube" target="blank" class="h-10 w-10 flex items-center rounded-full bg-white text-gray-500 hover:text-red-500 focus:bg-red-100 focus:outline-none transition"&gt;
-    &lt;svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="m-auto" viewBox="0 0 16 16"&gt;
-    &lt;path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z" /&gt;
-    &lt;/svg&gt;
-&lt;/a&gt;
-&lt;a href="#" title="twitter" target="blank" class="h-10 w-10 flex items-center rounded-full bg-white text-gray-500 hover:text-sky-500 focus:bg-sky-100 focus:outline-none transition"&gt;
-    &lt;svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="m-auto" viewBox="0 0 16 16"&gt;
-    &lt;path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" /&gt;
-    &lt;/svg&gt;
-&lt;/a&gt;
-&lt;/div&gt;
-
-&lt;div class="flex flex-wrap justify-center gap-4"&gt;
-&lt;a href="#" title="facebook" target="blank" class="h-10 w-10 flex items-center border  rounded-full bg-gray-white text-blue-500 hover:border-blue-200 hover:text-blue-600 focus:bg-blue-100 focus:outline-none transition"&gt;
-    &lt;svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="m-auto" viewBox="0 0 16 16"&gt;
-    &lt;path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" /&gt;
-    &lt;/svg&gt;
-&lt;/a&gt;
-&lt;a href="#" title="youtube" target="blank" class="h-10 w-10 flex items-center border  rounded-full bg-gray-white text-red-500 hover:border-red-200 hover:text-red-600 focus:bg-red-100 focus:outline-none transition"&gt;
-    &lt;svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="m-auto" viewBox="0 0 16 16"&gt;
-    &lt;path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z" /&gt;
-    &lt;/svg&gt;
-&lt;/a&gt;
-&lt;a href="#" title="twitter" target="blank" class="h-10 w-10 flex items-center border  rounded-full bg-gray-white text-sky-500 hover:border-sky-200 hover:text-sky-500 focus:bg-cyan-100 focus:outline-none transition"&gt;
-    &lt;svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="m-auto" viewBox="0 0 16 16"&gt;
-    &lt;path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" /&gt;
-    &lt;/svg&gt;
-&lt;/a&gt;
-&lt;/div&gt;
-
-&lt;div class="flex flex-wrap justify-center gap-4"&gt;
-&lt;a href="#" title="facebook" target="blank" class="h-10 w-10 flex items-center rounded-full bg-blue-50 text-blue-500 hover:bg-blue-100 hover:text-blue-600 focus:bg-blue-100 focus:outline-none transition"&gt;
-    &lt;svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="m-auto" viewBox="0 0 16 16"&gt;
-    &lt;path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" /&gt;
-    &lt;/svg&gt;
-&lt;/a&gt;
-&lt;a href="#" title="youtube" target="blank" class="h-10 w-10 flex items-center rounded-full bg-red-50 text-red-500 hover:bg-red-100 hover:text-red-600 focus:bg-red-100 focus:outline-none transition"&gt;
-    &lt;svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="m-auto" viewBox="0 0 16 16"&gt;
-    &lt;path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z" /&gt;
-    &lt;/svg&gt;
-&lt;/a&gt;
-&lt;a href="#" title="twitter" target="blank" class="h-10 w-10 flex items-center rounded-full bg-sky-50 text-sky-500 hover:bg-cyan-100 hover:text-sky-600 focus:bg-sky-100 focus:outline-none transition"&gt;
-    &lt;svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="m-auto" viewBox="0 0 16 16"&gt;
-    &lt;path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" /&gt;
-    &lt;/svg&gt;
-&lt;/a&gt;
-&lt;/div&gt;
-
-&lt;div class="flex flex-wrap justify-center gap-4"&gt;
-&lt;a href="#" title="facebook" target="blank" class="h-10 w-10 flex items-center rounded-full bg-blue-500 text-white hover:bg-blue-600 focus:bg-blue-700 focus:outline-none transition"&gt;
-    &lt;svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="m-auto" viewBox="0 0 16 16"&gt;
-    &lt;path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" /&gt;
-    &lt;/svg&gt;
-&lt;/a&gt;
-&lt;a href="#" title="youtube" target="blank" class="h-10 w-10 flex items-center rounded-full bg-red-500 text-white hover:bg-red-600 focus:bg-red-700 focus:outline-none transition"&gt;
-    &lt;svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="m-auto" viewBox="0 0 16 16"&gt;
-    &lt;path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z" /&gt;
-    &lt;/svg&gt;
-&lt;/a&gt;
-&lt;a href="#" title="twitter" target="blank" class="h-10 w-10 flex items-center rounded-full bg-sky-500 text-white hover:bg-sky-600 focus:bg-sky-700 focus:outline-none transition"&gt;
-    &lt;svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="m-auto" viewBox="0 0 16 16"&gt;
-    &lt;path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" /&gt;
-    &lt;/svg&gt;
-&lt;/a&gt;
-&lt;/div&gt;
-</code> 
-                                                </pre>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div> 
-
-                            <div>
-                                <div class=" relative md:flex flex-wrap items-end justify-between">
-                                    <h2 class="text-xl text-blueGray-700">Full rounded avatars</h2>
-                                    <div class="z-20 top-2 md:mt-0 mt-4 flex items-center justify-between divide-x divide-gray-100 gap-4">
-                                        <nav class="tab-head p-1 rounded-md bg-gray-100 bg-opacity-60 hover:bg-opacity-80  text-sm relative transition duration-300">
-                                            <div class="flex relative z-20 text-gray-500">
-                                                <button data-target="preview"  class="tab-item md:px-3 px-1.5 py-1.5 hover:text-cyan-9  00 focus:outline-none flex gap-1">
-                                                    <svg fill="none" class="stroke-current w-5 h-5">
-                                                        <path d="M17.25 10c0 1-1.75 6.25-7.25 6.25S2.75 11 2.75 10 4.5 3.75 10 3.75 17.25 9 17.25 10z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                        <circle cx="10" cy="10" r="2.25" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></circle>
-                                                    </svg>
-                                                    <span class="md:block hidden">Preview</span>
-                                                </button>
-                                                <button data-target="code" class="tab-item md:px-3 px-1.5 py-1.5 hover:text-cyan-900 rounded-md focus:outline-none flex gap-1 transition">
-                                                    <svg fill="none" class="stroke-current w-5 h-5" >
-                                                        <path d="M13.75 6.75l3.5 3.25-3.5 3.25M6.25 13.25L2.75 10l3.5-3.25" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                    </svg>
-                                                    <span class="md:block hidden">Code</span>
-                                                </button>
-                                            </div>
-                                            <div class="tab-indicator absolute top-1 z-10 bg-white shadow hover:bg-cyan-600 rounded-md md:px-3 px-1.5 py-1.5 duration-100"></div>
-                                        </nav>
-                                        <div class="pl-2">
-                                            <button class="text-sm text-gray-600 p-2 bg-cyan-200 bg-opacity-0 hover:text-cyan-700 hover:bg-opacity-20 active:bg-opacity-40 rounded-md focus:outline-none">
-                                                <svg class="w-5 h-5" viewBox="0 0 24 24">
-                                                    <path fill="currentColor" d="M19,3H14.82C14.25,1.44 12.53,0.64 11,1.2C10.14,1.5 9.5,2.16 9.18,3H5A2,2 0 0,0 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5A2,2 0 0,0 19,3M12,3A1,1 0 0,1 13,4A1,1 0 0,1 12,5A1,1 0 0,1 11,4A1,1 0 0,1 12,3M7,7H17V5H19V19H5V5H7V7M17,11H7V9H17V11M15,15H7V13H15V15Z" />
-                                                </svg>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                                <div id="fullRoundedAvatar" class="my-8 component-container">    
-                                    <div>
-                                        <div class="relative">
-                                            <div data-name="preview" class="bg-white rounded-2xl visible transform translate-y-0 opacity-100 tab-content w-full md:p-8 p-4 transtion duration-500 ease-in-out">
-                                                <div class="flex flex-wrap lg:justify-center lg:gap-16 md:gap-8 gap-4">
-                                                    <div class="flex flex-wrap justify-center gap-4">
-                                                        <a href="#" title="facebook" target="blank" class="h-10 w-10 flex items-center rounded-full bg-white text-gray-500  hover:text-blue-500 focus:bg-blue-100 focus:outline-none transition">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="m-auto" viewBox="0 0 16 16">
-                                                            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
-                                                        </svg>
-                                                        </a>
-                                                
-                                                        <a href="#" title="youtube" target="blank" class="h-10 w-10 flex items-center rounded-full bg-white text-gray-500 hover:text-red-500 focus:bg-red-100 focus:outline-none transition">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="m-auto" viewBox="0 0 16 16">
-                                                            <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z" />
-                                                        </svg>
-                                                        </a>
-                                                
-                                                        <a href="#" title="twitter" target="blank" class="h-10 w-10 flex items-center rounded-full bg-white text-gray-500 hover:text-sky-500 focus:bg-sky-100 focus:outline-none transition">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="m-auto" viewBox="0 0 16 16">
-                                                            <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
-                                                        </svg>
-                                                        </a>
-                                                    </div>
-                                                
-                                                    <div class="flex flex-wrap justify-center gap-4">
-                                                        <a href="#" title="facebook" target="blank" class="h-10 w-10 flex items-center border  rounded-full bg-gray-white text-blue-500 hover:border-blue-200 hover:text-blue-600 focus:bg-blue-100 focus:outline-none transition">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="m-auto" viewBox="0 0 16 16">
-                                                            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
-                                                        </svg>
-                                                        </a>
-                                                
-                                                        <a href="#" title="youtube" target="blank" class="h-10 w-10 flex items-center border  rounded-full bg-gray-white text-red-500 hover:border-red-200 hover:text-red-600 focus:bg-red-100 focus:outline-none transition">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="m-auto" viewBox="0 0 16 16">
-                                                            <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z" />
-                                                        </svg>
-                                                        </a>
-                                                
-                                                        <a href="#" title="twitter" target="blank" class="h-10 w-10 flex items-center border  rounded-full bg-gray-white text-sky-500 hover:border-sky-200 hover:text-sky-500 focus:bg-cyan-100 focus:outline-none transition">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="m-auto" viewBox="0 0 16 16">
-                                                            <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
-                                                        </svg>
-                                                        </a>
-                                                    </div>
-                                                
-                                                    <div class="flex flex-wrap justify-center gap-4">
-                                                        <a href="#" title="facebook" target="blank" class="h-10 w-10 flex items-center rounded-full bg-blue-50 text-blue-500 hover:bg-blue-100 hover:text-blue-600 focus:bg-blue-100 focus:outline-none transition">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="m-auto" viewBox="0 0 16 16">
-                                                            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
-                                                        </svg>
-                                                        </a>
-                                                
-                                                        <a href="#" title="youtube" target="blank" class="h-10 w-10 flex items-center rounded-full bg-red-50 text-red-500 hover:bg-red-100 hover:text-red-600 focus:bg-red-100 focus:outline-none transition">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="m-auto" viewBox="0 0 16 16">
-                                                            <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z" />
-                                                        </svg>
-                                                        </a>
-                                                
-                                                        <a href="#" title="twitter" target="blank" class="h-10 w-10 flex items-center rounded-full bg-sky-50 text-sky-500 hover:bg-cyan-100 hover:text-sky-600 focus:bg-sky-100 focus:outline-none transition">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="m-auto" viewBox="0 0 16 16">
-                                                            <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
-                                                        </svg>
-                                                        </a>
-                                                    </div>
-                                                
-                                                    <div class="flex flex-wrap justify-center gap-4">
-                                                        <a href="#" title="facebook" target="blank" class="h-10 w-10 flex items-center rounded-full bg-blue-500 text-white hover:bg-blue-600 focus:bg-blue-700 focus:outline-none transition">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="m-auto" viewBox="0 0 16 16">
-                                                            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
-                                                        </svg>
-                                                        </a>
-                                                
-                                                        <a href="#" title="youtube" target="blank" class="h-10 w-10 flex items-center rounded-full bg-red-500 text-white hover:bg-red-600 focus:bg-red-700 focus:outline-none transition">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="m-auto" viewBox="0 0 16 16">
-                                                            <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z" />
-                                                        </svg>
-                                                        </a>
-                                                
-                                                        <a href="#" title="twitter" target="blank" class="h-10 w-10 flex items-center rounded-full bg-sky-500 text-white hover:bg-sky-600 focus:bg-sky-700 focus:outline-none transition">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="m-auto" viewBox="0 0 16 16">
-                                                            <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
-                                                        </svg>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div data-name="code" class="tab-content absolute top-0 w-full bg-gray-800 rounded-2xl invisible text-sm transform -translate-y-10 opacity-0 p-2 transition duration-500 ease-in-out" >
                                                 <pre class="overflow-auto scrollbar-black rounded-xl language-markup hightlight" style="height:65vh;">
 <code>
 &lt;div class="flex flex-wrap justify-center gap-4"&gt;
@@ -1413,13 +499,29 @@
     <div class="fixed lg:hidden w-max z-50 md:bottom-12 md:right-12 right-4 bottom-4">
         <button id="docs" class="h-14 w-14 rounded-full shadow-xl bg-gray-900 text-cyan-300 hover:text-cyan-200 hover:shadow-2xl active:bg-cyan-700 transform focus:outline-none transition duration-300 ease-in-out">
             <div class="-mt-1">
-                <span id="i1" class="transform translate-y-2 material-icons transition duration-300" style="font-size:28px">expand_less</span>
-                <span id="i2" class="transform -translate-y-2 material-icons transition duration-300" style="font-size:28px">expand_more</span>
+                <span id="i1" class="translate-y-2 material-icons transition duration-300" style="font-size:28px">expand_less</span>
+                <span id="i2" class="-translate-y-2 material-icons transition duration-300" style="font-size:28px">expand_more</span>
             </div>
         </button>
     </div>
 
     <script src="../../../public/js/app.js"></script>
     <script src="../../../public/js/prism.js"></script>
+    <script>
+        let sideBtn = document.querySelector('#docs')
+        let sideBtnc = document.querySelector('.btnContent')
+        let sideBar = document.querySelector('#sidebar')
+        sideBtn.addEventListener('click', ()=>{
+            if (sideBar.classList.contains('-translate-x-96')){
+                sideBar.classList.replace('-translate-x-96', 'translate-x-0')
+                arrowTop.replace('translate-y-2', 'translate-y-[1.4rem]')
+                arrowBottom.replace('-translate-y-2', 'translate-y-[-2rem]')
+            }else{
+                sideBar.classList.replace('translate-x-0', '-translate-x-96')
+                arrowTop.replace('translate-y-[1.4rem]', 'translate-y-2')
+                arrowBottom.replace( 'translate-y-[-1.4rem]', '-translate-y-2')
+            }
+        })
+    </script>
 </body>
 </html>
