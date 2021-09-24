@@ -8,26 +8,8 @@ let tabContents = document.querySelectorAll('.tab-content');
 let components = document.querySelectorAll('.component')
 let componentContainers = document.querySelectorAll('.component-container')
 
-let sideBtn = document.querySelector('#docs')
-let sideBtnc = document.querySelector('.btnContent')
-let sideBar = document.querySelector('#sidebar')
-
 let arrowTop = document.querySelector('#i1').classList
 let arrowBottom = document.querySelector('#i2').classList
-
-sideBtn.addEventListener('click', ()=>{
-    if (sideBar.classList.contains('-translate-x-96')){
-        sideBar.classList.replace('-translate-x-96', 'translate-x-0')
-        arrowTop.replace('translate-y-2', 'translate-y-5')
-        arrowBottom.replace('-translate-y-2', '-translate-y-5')
-        arrowTop.add('scale-y-105')
-        arrowBottom.add('scale-y-105')
-    }else{
-        sideBar.classList.replace('translate-x-0', '-translate-x-96')
-        arrowTop.replace('translate-y-5', 'translate-y-2')
-        arrowBottom.replace( '-translate-y-5', '-translate-y-2')
-    }
-})
 
 let tabItemsProps = tabItems[0].getBoundingClientRect();
 tabIndicator.style.height = tabItemsProps.height + "px";
