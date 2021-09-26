@@ -43,3 +43,7 @@ tabItems.forEach(tabItem => {
         })
     })
 });
+
+modernUis.forEach(modernUi =>{
+    tailus(atoms, molecules, organims)
+})
